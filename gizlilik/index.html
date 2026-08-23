@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Motoseyir — Gizlilik ve Destek</title>
+<style>body{margin:0;font:16px ui-sans-serif,-apple-system,sans-serif}</style>
+</head>
+<body>
+
+
+<style>
+  :root {
+    --paper: #F3F6F6;
+    --surface: #FFFFFF;
+    --line: #DCE4E5;
+    --ink: #13252C;
+    --ink-dim: #5C7078;
+    --accent: #0B6E7F;
+    --accent-soft: #E3F0F2;
+    --sans: ui-sans-serif, -apple-system, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    --mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #0C1A20; --surface: #13272F; --line: #23414B;
+      --ink: #E6EFF0; --ink-dim: #93A9B1; --accent: #4BB3C7; --accent-soft: #123039;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #0C1A20; --surface: #13272F; --line: #23414B;
+    --ink: #E6EFF0; --ink-dim: #93A9B1; --accent: #4BB3C7; --accent-soft: #123039;
+  }
+
+  * { box-sizing: border-box; }
+  body { background: var(--paper); }
+
+  .page {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 16px;
+    line-height: 1.65;
+    padding: clamp(28px, 6vw, 72px) clamp(20px, 6vw, 48px) 80px;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; }
+
+  .eyebrow {
+    font-family: var(--mono);
+    font-size: 12px;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: var(--ink-dim);
+  }
+  h1 { font-size: clamp(28px, 5vw, 40px); letter-spacing: -.025em; margin: 10px 0 4px; text-wrap: balance; }
+  h2 { font-size: 20px; letter-spacing: -.015em; margin: 0; text-wrap: balance; }
+  h3 { font-size: 16px; margin: 0; }
+  p, li { color: var(--ink-dim); margin: 0; }
+  p.lead { color: var(--ink); }
+  a { color: var(--accent); }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  .updated { font-family: var(--mono); font-size: 12px; color: var(--ink-dim); }
+
+  section {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    padding: clamp(18px, 3vw, 26px);
+    margin-top: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  ul { margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 7px; }
+
+  .summary { background: var(--accent-soft); border-color: transparent; }
+  .summary li { color: var(--ink); }
+
+  table { width: 100%; border-collapse: collapse; font-size: 14.5px; }
+  th, td { text-align: left; padding: 9px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { font-family: var(--mono); font-size: 11.5px; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-dim); font-weight: 600; }
+  td { color: var(--ink-dim); }
+  .tablewrap { overflow-x: auto; }
+
+  .contact { font-family: var(--mono); font-size: 15px; color: var(--ink); }
+  footer { margin-top: 26px; font-family: var(--mono); font-size: 12px; color: var(--ink-dim); }
+</style>
+
+<div class="page">
+  <div class="wrap">
+    <div class="eyebrow">Motoseyir · Motorcunun navigasyonu</div>
+    <h1>Gizlilik Politikası ve Destek</h1>
+    <p class="updated">Son güncelleme: 23 Ağustos 2026 · iOS ve Android için geçerlidir</p>
+
+    <section class="summary">
+      <h2>Kısaca</h2>
+      <ul>
+        <li><strong>Hesap oluşturmanız gerekmez.</strong> E-posta, telefon veya doğum tarihi istemiyoruz.</li>
+        <li>Rota hesaplamak için konumunuz ve arama sorgularınız harita servislerine iletilir; kaydedilmez.</li>
+        <li><strong>Sürüş kaydı</strong> açıkken konumunuz ekran kapalıyken de alınır — ama yalnızca cihazınızda tutulur.</li>
+        <li><strong>Grup sürüşüne</strong> katılırsanız, seçtiğiniz takma ad ve anlık konumunuz sürüş boyunca grubunuzdakilerle paylaşılmak üzere sunucumuzda tutulur; sürüş bitince silinir.</li>
+        <li>Deneme haklarının kötüye kullanılmasını önlemek için cihazınızın <strong>anonim bir kimlik özeti</strong> sunucumuza gönderilir.</li>
+        <li>Uygulama çökerse teknik bir <strong>çökme raporu</strong> gönderilir; konum veya kişisel bilgi içermez.</li>
+        <li><strong>Reklam yoktur</strong>; hiçbir reklam ağıyla veri paylaşılmaz.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Topladığımız veriler</h2>
+
+      <h3>Konum bilgisi</h3>
+      <p>
+        Uygulama, başlangıç noktanızı belirlemek ve navigasyon sırasında sizi rotada takip etmek için
+        konumunuza erişir. Rota hesaplaması için konumunuz Google Maps Platform'a ve köy yolları modunda
+        kendi rota sunucumuza, yol üzerindeki yağış uyarısı için MET Norway hava servisine gönderilir.
+        Bu isteklerde konum saklanmaz — istek karşılanır ve biter.
+      </p>
+      <p>
+        <strong>Sürüş kaydı</strong> başlattığınızda iziniz, telefon cebinizdeyken ve ekran kapalıyken de
+        alınmaya devam eder; bunu durum çubuğundaki konum işaretinden görürsünüz. Kaydedilen iz yalnızca
+        cihazınızda saklanır ve "Bitir" deyince kayıt durur. Siz başlatmadan arka planda konum toplanmaz.
+      </p>
+      <p>
+        İzni istediğiniz zaman kapatabilirsiniz (iOS: Ayarlar → Motoseyir → Konum.
+        Android: Ayarlar → Uygulamalar → Motoseyir → İzinler). Bu durumda başlangıç noktasını elle seçersiniz.
+      </p>
+
+      <h3>Grup sürüşü</h3>
+      <p>
+        Bir gruba katıldığınızda ya da grup kurduğunuzda girdiğiniz <strong>takma ad</strong>, seçtiğiniz
+        <strong>avatar</strong> ve navigasyon sırasında <strong>anlık konumunuz</strong> (birkaç saniyede bir)
+        sunucumuza gönderilir. Amaç tek: aynı gruptakilerin birbirini haritada görmesi. Konum yalnızca
+        navigasyon açıkken yollanır, sürüş bitince sunucudan silinir; konum geçmişi tutulmaz.
+        Gruptan ayrıldığınızda adınız ve avatarınız da silinir. Grup kodu, grubu kurarken üretilen rastgele
+        bir koddur; başka hiçbir kimlikle ilişkilendirilmez.
+      </p>
+
+      <h3>Arama sorguları</h3>
+      <p>
+        Bir yer aradığınızda yazdığınız metin, öneri listesi için Google Places servisine gönderilir.
+        Bu sorgular kimliğinizle ilişkilendirilmez.
+      </p>
+
+      <h3>Cihaz kimliği özeti</h3>
+      <p>
+        Deneme süresinin ve lansman kampanyasının, uygulama silinip yeniden kurularak defalarca alınmasını
+        önlemek için cihazınıza ait sabit bir tanımlayıcıdan <strong>tek yönlü özet (SHA-256)</strong> üretip
+        sunucumuza gönderiyoruz. Aynı özet grup sürüşünde "hangi cihaz hangi gruba üye" bilgisini tutmak için
+        kullanılır.
+      </p>
+      <ul>
+        <li>Kaynak, Android'de <span class="contact">Settings.Secure.ANDROID_ID</span>, iOS'ta uygulamanın Keychain'de sakladığı rastgele bir kimliktir.</li>
+        <li><strong>Ham tanımlayıcı hiçbir zaman gönderilmez.</strong> Sunucuda yalnızca özet durur.</li>
+        <li>Özet uygulamaya özel bir değerle üretilir; başka uygulamaların ürettiğiyle eşleşmez.</li>
+        <li>Reklam, profilleme veya analiz için kullanılmaz.</li>
+      </ul>
+
+      <h3>Çökme raporları</h3>
+      <p>
+        Uygulama beklenmedik biçimde kapanırsa hatanın teknik ayrıntısı (hata yığını, cihaz modeli, işletim
+        sistemi ve uygulama sürümü, hatanın hangi ekranda olduğu) Sentry hizmetine gönderilir. Rapora konumunuz,
+        izleriniz, adınız veya kimlik özetiniz eklenmez; ekran görüntüsü alınmaz. Bu veriyi yalnızca hatayı
+        düzeltmek için kullanırız.
+      </p>
+
+      <h3>Mikrofon ve konuşma tanıma</h3>
+      <p>
+        Sesli arama özelliğini kullandığınızda söyledikleriniz, yalnızca aradığınız yeri metne çevirmek
+        amacıyla cihazın kendi konuşma tanıma servisiyle işlenir. Ses kaydı tarafımıza gönderilmez ve saklanmaz.
+      </p>
+
+      <h3>Cihazda kalanlar</h3>
+      <p>Aşağıdakiler yalnızca cihazınızda tutulur ve bize iletilmez:</p>
+      <ul>
+        <li>Kaydettiğiniz turlar, duraklar ve rota taslakları</li>
+        <li>Sürüş kayıtlarınız: izler, süre, mesafe, hız istatistikleri</li>
+        <li>Tur günlüğünüz: notlarınız ve eklediğiniz fotoğraflar</li>
+        <li>Harita katmanı, araç simgesi gibi tercihler</li>
+        <li>Günlük rota kullanım sayacı ve abonelik kademeniz</li>
+      </ul>
+      <p>
+        Uygulamayı silerseniz bu veriler de silinir. Fotoğraflarınıza yalnızca siz günlüğe eklemek üzere
+        seçtiğinizde erişilir; galeriniz taranmaz.
+      </p>
+    </section>
+
+    <section>
+      <h2>Veri özeti</h2>
+      <div class="tablewrap">
+        <table>
+          <thead>
+            <tr><th>Veri</th><th>Nereye gider</th><th>Amaç</th><th>Saklanıyor mu</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Konum</td><td>Google Maps Platform, rota sunucumuz</td><td>Rota hesaplama, navigasyon</td><td>Hayır</td></tr>
+            <tr><td>Konum</td><td>MET Norway</td><td>Yol üzerinde yağış uyarısı</td><td>Hayır</td></tr>
+            <tr><td>Anlık konum (grup sürüşü)</td><td>Takip servisimiz</td><td>Gruptakilerin birbirini görmesi</td><td>Sürüş boyunca; bitince silinir</td></tr>
+            <tr><td>Takma ad, avatar (grup sürüşü)</td><td>Takip servisimiz</td><td>Haritada kimin kim olduğu</td><td>Gruptan ayrılana kadar</td></tr>
+            <tr><td>Arama metni</td><td>Google Places</td><td>Yer önerileri</td><td>Hayır</td></tr>
+            <tr><td>Ses (sesli arama)</td><td>Cihazın konuşma tanıma servisi</td><td>Söyleneni metne çevirme</td><td>Hayır</td></tr>
+            <tr><td>Cihaz kimliği özeti</td><td>Sayaç ve takip servisimiz</td><td>Deneme hakkının korunması, grup üyeliği</td><td>Evet — yalnızca özet</td></tr>
+            <tr><td>Çökme raporu</td><td>Sentry</td><td>Hata düzeltme</td><td>90 gün</td></tr>
+            <tr><td>Turlar, sürüşler, günlük, fotoğraflar</td><td>Sadece cihaz</td><td>Uygulama işlevselliği</td><td>Cihazda</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <h2>Sunucularımız</h2>
+      <p>Üç hizmetimiz var; hepsi aynı makinede çalışır ve HTTPS kullanır:</p>
+      <ul>
+        <li><strong>Rota sunucusu</strong> — köy yolları modunda rotayı hesaplar. Gönderilen: başlangıç ve varış koordinatları. Hesap yapılır, sonuç döner, kayıt tutulmaz.</li>
+        <li><strong>Sayaç servisi</strong> — deneme, kampanya ve davet haklarını yönetir. Gönderilen: cihaz kimliği özeti ve davet kodu.</li>
+        <li><strong>Takip servisi</strong> — grup sürüşünü yürütür. Gönderilen: cihaz kimliği özeti, grup kodu, takma ad, avatar ve navigasyon sırasında anlık konum. Konum yalnızca son değer olarak tutulur, geçmiş biriktirilmez, sürüş bitince silinir.</li>
+      </ul>
+      <p>Sunucularımızda e-posta, telefon numarası, konum geçmişi veya ödeme bilgisi bulunmaz. İstek günlüğü (IP dahil) tutulmaz.</p>
+    </section>
+
+    <section>
+      <h2>Üçüncü taraf hizmetler</h2>
+      <ul>
+        <li><strong>Google Maps Platform</strong> (Routes API, Places API, Maps SDK) — rota, yer arama ve harita. <a href="https://policies.google.com/privacy">policies.google.com/privacy</a></li>
+        <li><strong>MET Norway (Yr.no)</strong> — hava durumu tahmini; yalnızca koordinat gönderilir. <a href="https://www.met.no/en/About-us/privacy">met.no gizlilik</a></li>
+        <li><strong>Sentry</strong> — çökme raporları. <a href="https://sentry.io/privacy/">sentry.io/privacy</a></li>
+        <li><strong>Apple App Store</strong> ve <strong>Google Play</strong> — abonelik satın alımları. Ödeme bilgilerinize erişimimiz yoktur.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Abonelikler</h2>
+      <p>
+        İlk kurulumda 7 gün boyunca tüm özellikler ücretsiz açıktır. Sonrasında ücretsiz kademede günde
+        5 rota hesaplayabilirsiniz. Abonelik, dönem bitiminden en az 24 saat önce iptal edilmezse
+        otomatik yenilenir. Yönetim ve iptal işlemleri mağaza hesabınızdan yapılır — iOS'ta Apple Kimliği
+        ayarları, Android'de Google Play → Abonelikler.
+      </p>
+    </section>
+
+    <section>
+      <h2>Çocukların gizliliği</h2>
+      <p>
+        Uygulama 13 yaş altındaki çocuklara yönelik değildir ve bilerek onlardan veri toplamaz.
+      </p>
+    </section>
+
+    <section>
+      <h2>Verilerinizin silinmesi</h2>
+      <p>
+        Hesap olmadığı için silinecek bir hesap kaydı yoktur. Cihazınızdaki tüm veriler uygulamayı
+        sildiğinizde gider. Grup sürüşü verileriniz gruptan ayrıldığınızda, anlık konumunuz ise sürüş
+        bittiğinde kendiliğinden silinir.
+      </p>
+      <p>
+        Sunucumuzda kalan tek şey, cihaz kimliği özetinize bağlı deneme ve kampanya kayıtlarıdır.
+        Silinmesini isterseniz aşağıdaki adrese yazın; talebiniz üzerine kaydı sileriz. Bu durumda
+        deneme hakkınızın yeniden başlayabileceğini hatırlatırız.
+      </p>
+    </section>
+
+    <section id="destek">
+      <h2>Destek</h2>
+      <p>Soru, hata bildirimi ve abonelik konularında bize yazabilirsiniz:</p>
+      <p class="contact"><a href="mailto:erengn@gmail.com">erengn@gmail.com</a></p>
+      <p>
+        Genellikle birkaç iş günü içinde yanıt veriyoruz. Hata bildiriminde cihaz modeli, işletim sistemi
+        sürümü ve sorunu gördüğünüz ekranı belirtirseniz çok yardımcı olur.
+      </p>
+    </section>
+
+    <section>
+      <h2>Güvenli sürüş</h2>
+      <p>
+        Telefonunuzu sürüş sırasında elle kullanmayın. Rotanızı yola çıkmadan önce ayarlayın ve
+        telefonu uygun bir tutucuya sabitleyin.
+      </p>
+    </section>
+
+    <footer>Motoseyir · Batuhan Eren Engin · İstanbul, Türkiye</footer>
+  </div>
+</div>
+
+</body>
+</html>
