@@ -91,7 +91,7 @@
   <div class="wrap">
     <div class="eyebrow">Motoseyir · Motorcunun navigasyonu</div>
     <h1>Gizlilik Politikası ve Destek</h1>
-    <p class="updated">Son güncelleme: 9 Eylül 2026 · iOS ve Android için geçerlidir</p>
+    <p class="updated">Son güncelleme: 11 Eylül 2026 · iOS ve Android için geçerlidir</p>
 
     <section class="summary">
       <h2>Kısaca</h2>
@@ -99,7 +99,7 @@
         <li><strong>Hesap oluşturmanız gerekmez.</strong> E-posta, telefon veya doğum tarihi istemiyoruz.</li>
         <li>Rota hesaplamak için konumunuz ve arama sorgularınız harita servislerine iletilir; kaydedilmez.</li>
         <li><strong>Sürüş kaydı</strong> açıkken konumunuz ekran kapalıyken de alınır — ama yalnızca cihazınızda tutulur.</li>
-        <li><strong>Grup sürüşüne</strong> katılırsanız, seçtiğiniz takma ad ve anlık konumunuz sürüş boyunca grubunuzdakilerle paylaşılmak üzere sunucumuzda tutulur; sürüş bitince silinir.</li>
+        <li><strong>Grup sürüşüne</strong> katılırsanız, seçtiğiniz takma ad ve anlık konumunuz sürüş boyunca grubunuzdakilerle paylaşılmak üzere sunucumuzda tutulur; sürüş bitince silinir. Grupta başlattığınız rota da gruptakiler açabilsin diye sürüş bitene kadar (en geç 12 saat) sunucuda durur.</li>
         <li><strong>Topluluğa</strong> katılırsanız seçtiğiniz kullanıcı adı ve simge, paylaştığınız turlar, beğenileriniz ve yorumlarınız sunucumuzda tutulur ve <strong>uygulamayı kullanan herkese görünür</strong>. Katılmak isteğe bağlıdır.</li>
         <li>Deneme haklarının kötüye kullanılmasını önlemek için cihazınızın <strong>anonim bir kimlik özeti</strong> sunucumuza gönderilir.</li>
         <li>Uygulama çökerse teknik bir <strong>çökme raporu</strong> gönderilir; konum veya kişisel bilgi içermez.</li>
@@ -136,6 +136,13 @@
         Gruptan ayrıldığınızda adınız ve avatarınız da silinir. Grup kodu, grubu kurarken üretilen rastgele
         bir koddur; başka hiçbir kimlikle ilişkilendirilmez.
       </p>
+      <p>
+        <strong>Grup rotası:</strong> bir gruptayken bir rotayı <strong>Başla</strong> ile açarsanız,
+        gruptakiler aynı rotayı tek dokunuşla açabilsin diye o rota — adı, başlangıcı, durakları, çizgisi,
+        dönüş talimatları, mesafesi ve süresi — sunucumuza gönderilir. Yalnız gruba katılmış kişiler görür.
+        Sürüş bitince silinir; uygulama silme isteğini gönderemezse sunucu <strong>12 saat</strong> sonra
+        kendisi siler.
+      </p>
 
       <h3>Topluluk</h3>
       <p>
@@ -153,11 +160,15 @@
         <li>beğenileriniz ve yorumlarınız.</li>
       </ul>
       <p>
-        Şunlar paylaşıma <strong>hiç girmez</strong>: ziyaret zamanlarınız, grup kodunuz, sürüş
-        kayıtlarınız. Günlük notlarınız ve fotoğraflarınız yalnızca paylaşırken
+        Şunlar paylaşıma <strong>hiç girmez</strong>: ziyaret zamanlarınız ve grup kodunuz. Günlük notlarınız ve fotoğraflarınız yalnızca paylaşırken
         <strong>&ldquo;Günlüğü de paylaş&rdquo;</strong>ı açarsanız gider ve o zaman onlar da herkese
         açık olur. Bir paylaşıma en çok <strong>üç fotoğraf</strong> eklenir; günlüğünüzde daha fazlası
         varsa hangilerinin gideceğini siz seçersiniz. Günlüğünüzün kendisi cihazınızda kalmaya devam eder.
+      </p>
+      <p>
+        Bir <strong>sürüş kaydını</strong> paylaşırsanız (1.0.5 sürümünden itibaren) izin başlangıç ve bitiş
+        noktalarına yaklaşık <strong>400 metreden yakın</strong> kısmı paylaşılmaz; evinizin ya da park
+        yerinizin konumu akışa düşmez.
       </p>
       <p>
         <strong>Fotoğraflı kullanıcı simgesi (isteğe bağlı):</strong> yüklediğiniz fotoğraf,
@@ -217,8 +228,8 @@
         <li>Günlük rota kullanım sayacı ve abonelik kademeniz</li>
       </ul>
       <p>
-        Uygulamayı silerseniz bu veriler de silinir. Fotoğraflarınıza yalnızca siz günlüğe eklemek üzere
-        seçtiğinizde erişilir; galeriniz taranmaz.
+        Uygulamayı silerseniz bu veriler de silinir. Fotoğraflarınıza yalnızca siz günlüğe ya da topluluk
+        profilinize eklemek üzere seçtiğinizde erişilir; galeriniz taranmaz.
       </p>
     </section>
 
@@ -234,6 +245,7 @@
             <tr><td>Konum</td><td>MET Norway</td><td>Yol üzerinde yağış uyarısı</td><td>Hayır</td></tr>
             <tr><td>Anlık konum (grup sürüşü)</td><td>Takip servisimiz</td><td>Gruptakilerin birbirini görmesi</td><td>Sürüş boyunca; bitince silinir</td></tr>
             <tr><td>Takma ad, avatar (grup sürüşü)</td><td>Takip servisimiz</td><td>Haritada kimin kim olduğu</td><td>Gruptan ayrılana kadar</td></tr>
+            <tr><td>Grup rotası: ad, başlangıç, duraklar, çizgi, dönüş talimatları</td><td>Takip servisimiz</td><td>Gruptakilerin aynı rotayı açması</td><td>Sürüş bitince silinir; en geç 12 saat</td></tr>
             <tr><td>Arama metni</td><td>Google Places</td><td>Yer önerileri</td><td>Hayır</td></tr>
             <tr><td>Ses (sesli arama)</td><td>Cihazın konuşma tanıma servisi</td><td>Söyleneni metne çevirme</td><td>Hayır</td></tr>
             <tr><td>Cihaz kimliği özeti</td><td>Sayaç ve takip servisimiz</td><td>Deneme hakkının korunması, grup üyeliği</td><td>Evet — yalnızca özet</td></tr>
@@ -251,7 +263,7 @@
       <ul>
         <li><strong>Rota sunucusu</strong> — köy yolları modunda rotayı hesaplar. Gönderilen: başlangıç ve varış koordinatları. Hesap yapılır, sonuç döner, kayıt tutulmaz.</li>
         <li><strong>Sayaç servisi</strong> — deneme, kampanya ve davet haklarını yönetir. Gönderilen: cihaz kimliği özeti ve davet kodu.</li>
-        <li><strong>Takip servisi</strong> — grup sürüşünü yürütür. Gönderilen: cihaz kimliği özeti, grup kodu, takma ad, avatar ve navigasyon sırasında anlık konum. Konum yalnızca son değer olarak tutulur, geçmiş biriktirilmez, sürüş bitince silinir.</li>
+        <li><strong>Takip servisi</strong> — grup sürüşünü yürütür. Gönderilen: cihaz kimliği özeti, grup kodu, takma ad, avatar ve navigasyon sırasında anlık konum. Konum yalnızca son değer olarak tutulur, geçmiş biriktirilmez, sürüş bitince silinir. Grupta başlattığınız rota da burada durur; sürüş bitince, en geç 12 saat sonra silinir.</li>
         <li><strong>Rota gönderim servisi</strong> — yalnız &ldquo;Efsane Rotalar&rsquo;a gönder&rdquo; dediğinizde çalışır. Gönderilen: rotanın adı, durakları, şekli, yazdığınız açıklama ve rozette görünmesini istediğiniz ad. Günlük notlarınız ve fotoğraflarınız gönderilmez. Gelen rota otomatik yayına girmez; insan eliyle değerlendirilir.</li>
         <li><strong>Topluluk servisi</strong> — yalnız siz katılırsanız çalışır. Yukarıdaki &ldquo;Topluluk&rdquo; bölümünde tek tek yazılı olanlar burada tutulur ve <strong>herkese açıktır</strong>; &ldquo;yalnız arkadaşlarım görsün&rdquo; diye bir ayar yoktur.</li>
       </ul>
