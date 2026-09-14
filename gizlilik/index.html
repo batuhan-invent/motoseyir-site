@@ -91,7 +91,7 @@
   <div class="wrap">
     <div class="eyebrow">Motoseyir · Motorcunun navigasyonu</div>
     <h1>Gizlilik Politikası ve Destek</h1>
-    <p class="updated">Son güncelleme: 13 Eylül 2026 · iOS ve Android için geçerlidir</p>
+    <p class="updated">Son güncelleme: 14 Eylül 2026 · iOS ve Android için geçerlidir</p>
 
     <section class="summary">
       <h2>Kısaca</h2>
@@ -143,6 +143,13 @@
         dönüş talimatları, mesafesi ve süresi — sunucumuza gönderilir. Yalnız gruba katılmış kişiler görür.
         Sürüş bitince silinir; uygulama silme isteğini gönderemezse sunucu <strong>12 saat</strong> sonra
         kendisi siler.
+      </p>
+      <p>
+        <strong>İnterkom:</strong> yalnız siz açarsanız ve yalnız grupla navigasyon sürerken çalışır.
+        Mikrofonunuz navigasyon boyunca açık kalır; sesiniz internet üzerinden <strong>yalnız o anda aynı
+        gruba bağlı üyelere</strong> iletilir. Ses <strong>tarafımızca kaydedilmez ve saklanmaz</strong>;
+        medya sunucumuz sesi yalnızca aktarır. İnterkom navigasyon bitince kapanır; grup kartındaki anahtarla
+        ya da sürüşte interkom piline dokunarak mikrofonu istediğiniz an kapatabilirsiniz.
       </p>
 
       <h3>Topluluk</h3>
@@ -222,6 +229,10 @@
         Sesli arama özelliğini kullandığınızda söyledikleriniz, yalnızca aradığınız yeri metne çevirmek
         amacıyla cihazın kendi konuşma tanıma servisiyle işlenir. Ses kaydı tarafımıza gönderilmez ve saklanmaz.
       </p>
+      <p>
+        Grup sürüşü interkomunu açarsanız mikrofon, navigasyon boyunca kask interkomunuz ya da kulaklığınız
+        üzerinden açık kalır ve ses yalnız gruptakilere aktarılır (bkz. &ldquo;Grup sürüşü&rdquo;). Kayıt yoktur.
+      </p>
 
       <h3>Cihazda kalanlar</h3>
       <p>Aşağıdakiler yalnızca cihazınızda tutulur ve bize iletilmez — <strong>Topluluk&rsquo;ta paylaşmadığınız sürece</strong> (aşağıya bakın):</p>
@@ -255,6 +266,7 @@
             <tr><td>Son bilinen konum (&ldquo;Yakınımda&rdquo; sıralaması)</td><td>Topluluk servisimiz</td><td>Paylaşımları yakınlığa göre sıralama</td><td>Hayır</td></tr>
             <tr><td>Arama metni</td><td>Google Places</td><td>Yer önerileri</td><td>Hayır</td></tr>
             <tr><td>Ses (sesli arama)</td><td>Cihazın konuşma tanıma servisi</td><td>Söyleneni metne çevirme</td><td>Hayır</td></tr>
+            <tr><td>Ses (interkom, yalnız siz açarsanız)</td><td>İnterkom medya sunucumuz (LiveKit)</td><td>Grup sürüşünde sesli sohbet</td><td>Hayır — yalnızca odadakilere aktarılır</td></tr>
             <tr><td>Cihaz kimliği özeti</td><td>Sayaç ve takip servisimiz</td><td>Deneme hakkının korunması, grup üyeliği</td><td>Evet — yalnızca özet</td></tr>
             <tr><td>Çökme raporu</td><td>Sentry</td><td>Hata düzeltme</td><td>90 gün</td></tr>
             <tr><td>Turlar, sürüşler, günlük, fotoğraflar</td><td>Sadece cihaz</td><td>Uygulama işlevselliği</td><td>Cihazda</td></tr>
@@ -265,12 +277,13 @@
 
     <section>
       <h2>Sunucularımız</h2>
-      <p>Dört hizmetimiz var; hepsi aynı makinede çalışır ve HTTPS kullanır:</p>
+      <p>Beş hizmetimiz var; hepsi aynı makinede çalışır ve HTTPS kullanır:</p>
       <ul>
         <li><strong>Rota sunucusu</strong> — köy yolları modunda rotayı hesaplar. Gönderilen: başlangıç ve varış koordinatları. Hesap yapılır, sonuç döner, kayıt tutulmaz.</li>
         <li><strong>Sayaç servisi</strong> — deneme, kampanya ve davet haklarını yönetir. Gönderilen: cihaz kimliği özeti ve davet kodu.</li>
         <li><strong>Takip servisi</strong> — grup sürüşünü yürütür. Gönderilen: cihaz kimliği özeti, grup kodu, takma ad, avatar ve navigasyon ya da sürüş kaydı sırasında anlık konum. Konum yalnızca son değer olarak tutulur, geçmiş biriktirilmez, sürüş bitince silinir. Grupta başlattığınız rota da burada durur; sürüş bitince, en geç 12 saat sonra silinir.</li>
         <li><strong>Topluluk servisi</strong> — yalnız siz katılırsanız çalışır. Yukarıdaki &ldquo;Topluluk&rdquo; bölümünde tek tek yazılı olanlar burada tutulur ve <strong>herkese açıktır</strong>; &ldquo;yalnız arkadaşlarım görsün&rdquo; diye bir ayar yoktur. &ldquo;Yakınımda&rdquo; sıralaması için gönderilen konum yalnızca sıralamada kullanılır, kaydedilmez.</li>
+        <li><strong>İnterkom servisi</strong> — yalnız siz açarsanız çalışır. Grup sürüşünde sesli sohbet için takip servisi size grubun ses odasına kısa ömürlü bir giriş bileti verir; ses kendi medya sunucumuz (LiveKit) üzerinden yalnız o anda odadaki üyelere aktarılır, <strong>kaydedilmez ve saklanmaz</strong>. Odaya yalnız gruba katılmış kişiler girebilir; oda navigasyon bitince kapanır.</li>
       </ul>
       <p>Sunucularımızda e-posta, telefon numarası, konum geçmişi veya ödeme bilgisi bulunmaz. İstek günlüğü (IP dahil) tutulmaz. <strong>Ad konusunda iki istisna vardır ve ikisini de siz açarsınız:</strong> grup sürüşündeki takma adınız (yalnız aynı gruptakilere görünür) ve Topluluk kullanıcı adınız (herkese görünür).</p>
     </section>
