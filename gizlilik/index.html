@@ -91,7 +91,7 @@
   <div class="wrap">
     <div class="eyebrow">Motoseyir · Motorcunun navigasyonu</div>
     <h1>Gizlilik Politikası ve Destek</h1>
-    <p class="updated">Son güncelleme: 14 Eylül 2026 · iOS ve Android için geçerlidir</p>
+    <p class="updated">Son güncelleme: 20 Eylül 2026 · iOS ve Android için geçerlidir</p>
 
     <section class="summary">
       <h2>Kısaca</h2>
@@ -150,6 +150,34 @@
         gruba bağlı üyelere</strong> iletilir. Ses <strong>tarafımızca kaydedilmez ve saklanmaz</strong>;
         medya sunucumuz sesi yalnızca aktarır. İnterkom navigasyon bitince kapanır; grup kartındaki anahtarla
         ya da sürüşte interkom piline dokunarak mikrofonu istediğiniz an kapatabilirsiniz.
+      </p>
+      <p>
+        <strong>Gruba gönderilen sürüş kaydı:</strong> sürüşünüz bittiğinde kaydı gruba
+        gönderebilirsiniz. O zaman kaydın izi, mesafesi ve süresi sunucumuzda <strong>14 gün</strong>
+        tutulur ve yalnız gruba katılmış kişiler görebilir. İzin başlangıç ve bitiş noktalarına yaklaşık
+        <strong>400 metreden yakın</strong> kısmı gönderilmez — evinizin ya da park yerinizin konumu
+        gruba düşmez. Gönderen başına en çok üç kayıt durur ve kaydı istediğiniz an gruptan
+        kaldırabilirsiniz.
+      </p>
+
+      <h3>AI yol arkadaşı</h3>
+      <p>
+        AI yol arkadaşı <strong>yalnız siz açarsanız</strong> çalışır (Pro özelliği).
+        &ldquo;Konuş&rdquo;a bastığınız andan oturum kapanana kadar mikrofonunuz açık kalır; sesiniz,
+        yanıtı üretmesi için doğrudan <strong>OpenAI</strong>&rsquo;ın canlı ses servisine iletilir ve
+        yanıt sesle geri gelir. Ses <strong>tarafımızca kaydedilmez ve saklanmaz</strong>; sunucumuz
+        yalnız bağlantıyı kurar, ses oradan geçmez. Bir oturum en çok <strong>beş dakika</strong> sürer,
+        bir süre konuşmazsanız kendiliğinden kapanır, &ldquo;Oturumu kapat&rdquo; ile de istediğiniz an
+        kapatılır. İnterkom açıkken AI yol arkadaşı hiç açılmaz: ikisi de aynı mikrofonu kullanır.
+      </p>
+
+      <h3>Destek sohbeti</h3>
+      <p>
+        Ayarlar &rsaquo; &ldquo;Bir sorun mu var, bir fikrin mi?&rdquo; bölümünden yazarsanız
+        mesajlarınız, verdiğimiz yanıtlar, uygulama sürümü ve telefonunuzun işletim sistemi sunucumuzda
+        tutulur; yalnızca uygulamayı geliştiren kişi okur, kimseyle paylaşılmaz. Konuşma cihaz kimliği
+        özetinize bağlıdır ve en çok <strong>bir yıl</strong> saklanır. Sohbet ekranındaki çöp kutusuyla
+        ya da <strong>Ayarlar &rsaquo; Verilerimi sil</strong> ile istediğiniz an silersiniz.
       </p>
 
       <h3>Topluluk</h3>
@@ -267,6 +295,9 @@
             <tr><td>Arama metni</td><td>Google Places</td><td>Yer önerileri</td><td>Hayır</td></tr>
             <tr><td>Ses (sesli arama)</td><td>Cihazın konuşma tanıma servisi</td><td>Söyleneni metne çevirme</td><td>Hayır</td></tr>
             <tr><td>Ses (interkom, yalnız siz açarsanız)</td><td>İnterkom medya sunucumuz (LiveKit)</td><td>Grup sürüşünde sesli sohbet</td><td>Hayır — yalnızca odadakilere aktarılır</td></tr>
+            <tr><td>Ses (AI yol arkadaşı, yalnız siz açarsanız)</td><td>OpenAI</td><td>Sesli yanıt üretme</td><td>Bizde tutulmaz</td></tr>
+            <tr><td>Sürüş kaydı izi (yalnız gruba gönderirseniz)</td><td>Takip servisimiz</td><td>Gruptakilerin kaydı görmesi</td><td>14 gün</td></tr>
+            <tr><td>Destek mesajları (yalnız siz yazarsanız)</td><td>Destek servisimiz</td><td>Sorununuza yanıt</td><td>En çok 1 yıl</td></tr>
             <tr><td>Cihaz kimliği özeti</td><td>Sayaç ve takip servisimiz</td><td>Deneme hakkının korunması, grup üyeliği</td><td>Evet — yalnızca özet</td></tr>
             <tr><td>Çökme raporu</td><td>Sentry</td><td>Hata düzeltme</td><td>90 gün</td></tr>
             <tr><td>Turlar, sürüşler, günlük, fotoğraflar</td><td>Sadece cihaz</td><td>Uygulama işlevselliği</td><td>Cihazda</td></tr>
@@ -277,13 +308,14 @@
 
     <section>
       <h2>Sunucularımız</h2>
-      <p>Beş hizmetimiz var; hepsi aynı makinede çalışır ve HTTPS kullanır:</p>
+      <p>Altı hizmetimiz var; hepsi aynı makinede çalışır ve HTTPS kullanır:</p>
       <ul>
         <li><strong>Rota sunucusu</strong> — köy yolları modunda rotayı hesaplar. Gönderilen: başlangıç ve varış koordinatları. Hesap yapılır, sonuç döner, kayıt tutulmaz.</li>
         <li><strong>Sayaç servisi</strong> — deneme, kampanya ve davet haklarını yönetir. Gönderilen: cihaz kimliği özeti ve davet kodu.</li>
         <li><strong>Takip servisi</strong> — grup sürüşünü yürütür. Gönderilen: cihaz kimliği özeti, grup kodu, takma ad, avatar ve navigasyon ya da sürüş kaydı sırasında anlık konum. Konum yalnızca son değer olarak tutulur, geçmiş biriktirilmez, sürüş bitince silinir. Grupta başlattığınız rota da burada durur; sürüş bitince, en geç 12 saat sonra silinir.</li>
         <li><strong>Topluluk servisi</strong> — yalnız siz katılırsanız çalışır. Yukarıdaki &ldquo;Topluluk&rdquo; bölümünde tek tek yazılı olanlar burada tutulur ve <strong>herkese açıktır</strong>; &ldquo;yalnız arkadaşlarım görsün&rdquo; diye bir ayar yoktur. &ldquo;Yakınımda&rdquo; sıralaması için gönderilen konum yalnızca sıralamada kullanılır, kaydedilmez.</li>
         <li><strong>İnterkom servisi</strong> — yalnız siz açarsanız çalışır. Grup sürüşünde sesli sohbet için takip servisi size grubun ses odasına kısa ömürlü bir giriş bileti verir; ses kendi medya sunucumuz (LiveKit) üzerinden yalnız o anda odadaki üyelere aktarılır, <strong>kaydedilmez ve saklanmaz</strong>. Odaya yalnız gruba katılmış kişiler girebilir; oda navigasyon bitince kapanır.</li>
+        <li><strong>AI yol arkadaşı servisi</strong> — yalnız siz açarsanız çalışır. Oturumu açmak için size kısa ömürlü bir bilet verir ve bağlantı pazarlığını sizin adınıza yapar; OpenAI anahtarı yalnız sunucumuzda durur, telefona hiç gitmez. Sunucuda tutulan tek şey, gün başına oturum hakkınızı sayabilmek için cihaz kimliği özetiniz ve oturumun açıldığı andır — en çok yedi gün sonra silinir. Sesiniz ve konuşmanın metni sunucumuza hiç gelmez.</li>
       </ul>
       <p>Sunucularımızda e-posta, telefon numarası, konum geçmişi veya ödeme bilgisi bulunmaz. İstek günlüğü (IP dahil) tutulmaz. <strong>Ad konusunda iki istisna vardır ve ikisini de siz açarsınız:</strong> grup sürüşündeki takma adınız (yalnız aynı gruptakilere görünür) ve Topluluk kullanıcı adınız (herkese görünür).</p>
     </section>
@@ -294,6 +326,7 @@
         <li><strong>Google Maps Platform</strong> (Routes API, Places API, Maps SDK) — rota, yer arama ve harita. <a href="https://policies.google.com/privacy">policies.google.com/privacy</a></li>
         <li><strong>MET Norway (Yr.no)</strong> — hava durumu tahmini; yalnızca koordinat gönderilir. <a href="https://www.met.no/en/About-us/privacy">met.no gizlilik</a></li>
         <li><strong>Google Maps Platform (Elevation API)</strong> — yükseklik profili için bir izden seçilen en çok 400 noktanın koordinatları gönderilir: yüksekliği olmayan bir GPX dosyasını içe aktardığınızda, yüksekliği olmayan bir parkuru açtığınızda ve bir sürüş kaydınızı açtığınızda. Koordinat dışında bir şey gönderilmez. <a href="https://policies.google.com/privacy">policies.google.com/privacy</a></li>
+        <li><strong>OpenAI</strong> — AI yol arkadaşıyla sesli sohbet; yalnız siz açarsanız sesiniz ve yanıt bu servisten geçer. <a href="https://openai.com/policies/privacy-policy">openai.com gizlilik</a></li>
         <li><strong>Sentry</strong> — çökme raporları. <a href="https://sentry.io/privacy/">sentry.io/privacy</a></li>
         <li><strong>Apple App Store</strong> ve <strong>Google Play</strong> — abonelik satın alımları. Ödeme bilgilerinize erişimimiz yoktur.</li>
       </ul>
