@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Motoseyir tanıtım sitesi — sitemap.
+  Alan adı https://motoseyir-app.com/ varsayılmıştır (kök). Site başka bir
+  yola (ör. /tanitim/) taşınırsa bu dosyadaki ve HTML'lerdeki canonical/OG/
+  JSON-LD URL'leri aynı önekle güncellenmelidir (bkz. KURULUM.md).
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://motoseyir-app.com/</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://motoseyir-app.com/ozellikler.html</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://motoseyir-app.com/nasil-yapilir.html</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+</urlset>
