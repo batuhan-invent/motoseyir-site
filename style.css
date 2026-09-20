@@ -533,3 +533,6 @@ a:hover { text-decoration-thickness: 2px; }
 @media (min-width: 640px) {
   body { font-size: 18px; }
 }
+
+/* AI CoRider bloğundaki gizlilik notu: gövdeden bir tık küçük, sessiz. */
+.ozellik-metin p.kucuk { font-size: .9rem; opacity: .85; }
