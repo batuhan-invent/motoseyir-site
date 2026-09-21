@@ -142,7 +142,11 @@ a:hover { text-decoration-thickness: 2px; }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 1rem;
+  /* SARMIYOR: menü kendi içinde sarıyor, sağdaki küme (dil seçici + İndir)
+     hep sağda kalıyor — dil seçici paneli de o yüzden sağa dayanabiliyor.
+     Yalnız telefon genişliğinde sarıyor (aşağıdaki 560 px kuralı). */
+  flex-wrap: nowrap;
+  gap: .6rem 1rem;
   padding-block: .8rem;
 }
 .logo {
@@ -169,7 +173,78 @@ a:hover { text-decoration-thickness: 2px; }
 }
 .nav a { color: var(--text-2); text-decoration: none; padding: .3rem .1rem; }
 .nav a:hover { color: var(--petrol); }
-.header-cta { flex-shrink: 0; }
+.header-cta { flex-shrink: 0; display: flex; align-items: center; gap: .6rem; }
+
+/* ---------- Dil seçici (başlıkta) ----------
+   <details> ile: JavaScript yok, bayrak yok (bayrak ülkeyi anlatır, dili
+   değil), dil adları kendi dilinde. Kapalıyken tek düğme kadar yer tutuyor. */
+.dil-sec { position: relative; }
+.dil-sec summary {
+  cursor: pointer;
+  list-style: none;
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  padding: .5rem .8rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  font-size: .82rem;
+  font-weight: 600;
+  color: var(--text-2);
+  white-space: nowrap;
+}
+.dil-sec summary::-webkit-details-marker { display: none; }
+.dil-sec summary:hover { border-color: var(--petrol); color: var(--petrol); }
+.dil-sec[open] summary { border-color: var(--petrol); color: var(--petrol); }
+.dil-kod {
+  font-size: .7rem;
+  font-weight: 800;
+  letter-spacing: .06em;
+  color: var(--petrol);
+}
+/* TELEFON GENİŞLİĞİ — üç şey birlikte değişiyor, üçü de aynı sebepten:
+   logo + menü + dil seçici + İndir düğmesi 375 px'te tek satıra sığmıyor ve
+   sayfa yatay kayıyordu (ölçüldü: 473 px içerik, 375 px ekran).
+   1) dil adı gizlenip yalnız kod kalıyor ("DE"),
+   2) başlık satırı sarıyor,
+   3) sarınca seçici satırın başına düştüğü için panel de sola dayanıyor —
+      sağa dayalı kalsa ekranın soluna taşıyordu (sola taşan içerik
+      kaydırmayla da erişilemiyor, yani panel büsbütün okunmaz oluyordu). */
+@media (max-width: 560px) {
+  .dil-ad { display: none; }
+  .header-inner { flex-wrap: wrap; }
+  .dil-sec ul { right: auto; left: 0; }
+}
+.dil-sec ul {
+  position: absolute;
+  right: 0;
+  top: calc(100% + .4rem);
+  z-index: 40;
+  list-style: none;
+  margin: 0;
+  padding: .5rem;
+  min-width: 11rem;
+  /* Panel ekranı taşmasın: kenar boşluğu kadar payı düşüyoruz. */
+  max-width: calc(100vw - 3rem);
+  max-height: 70vh;
+  overflow-y: auto;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: 0 18px 40px -18px rgba(20, 24, 26, .45);
+}
+.dil-sec li { margin: 0; }
+.dil-sec ul a,
+.dil-sec ul span {
+  display: block;
+  padding: .42rem .6rem;
+  border-radius: 8px;
+  font-size: .88rem;
+  color: var(--text-2);
+  text-decoration: none;
+}
+.dil-sec ul a:hover { background: var(--accent-tint); color: var(--petrol); }
+.dil-sec ul span { color: var(--text); font-weight: 700; }
 
 /* ---------- Rota ayracı (bölüm arası motif) ---------- */
 .rota-ayrac {
@@ -495,14 +570,48 @@ a:hover { text-decoration-thickness: 2px; }
   margin: 0;
 }
 .footer-links a { color: var(--text-2); }
-.dil-notu {
-  border: 1px dashed var(--border);
-  border-radius: 10px;
-  padding: .6rem .9rem;
-  display: inline-block;
+
+/* Altbilgideki dil listesi: JS'siz ve her zaman açık — arama motoru ve
+   başlıktaki açılır listeyi açamayan ziyaretçi için ikinci yol. */
+.dil-altbilgi { margin-top: 1.25rem; }
+.dil-altbilgi-baslik {
+  display: block;
+  font-size: .74rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: var(--text-muted);
+  margin-bottom: .5rem;
 }
+.dil-liste {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4rem 1.1rem;
+  padding: 0;
+  margin: 0;
+}
+.dil-liste a { color: var(--text-2); }
+.dil-liste strong { color: var(--text); }
 
 /* ---------- Nasıl yapılır (açılır kapanır kartlar) ---------- */
+
+/* Hızlı başlangıç KATLANMIYOR: aranacak bir konu değil, sayfanın girişi —
+   ilk sürüşün beş adımı (uygulama içi Yardım sayfasıyla aynı karar). */
+.hizli-kart {
+  background: var(--surface);
+  border: 1px solid var(--petrol);
+  border-radius: var(--radius);
+  padding: 1.4rem 1.6rem;
+  max-width: 70ch;
+  margin-bottom: 1.75rem;
+}
+.hizli-kart h2 { margin: 0 0 .9rem; font-size: 1.15rem; }
+.hizli-kart ol { margin: 0; padding-left: 1.3rem; color: var(--text-2); }
+.hizli-kart li { margin-bottom: .6rem; font-size: .98rem; }
+.hizli-kart li:last-child { margin-bottom: 0; }
+.hizli-kart li::marker { color: var(--petrol); font-weight: 800; }
+
 .yardim-liste { display: grid; gap: .75rem; max-width: 70ch; }
 .yardim-kart {
   background: var(--surface);
@@ -525,6 +634,32 @@ a:hover { text-decoration-thickness: 2px; }
 .yardim-kart summary .ok { color: var(--text-muted); transition: transform .15s ease; flex-shrink: 0; }
 .yardim-kart[open] summary .ok { transform: rotate(180deg); }
 .yardim-kart p { color: var(--text-2); padding-bottom: 1.1rem; margin: 0; font-size: .98rem; }
+/* Konular madde madde: sayfa çoğu zaman yola çıkmadan önce, telefonda
+   okunuyor — "şuraya dokun → şu olur" tek satırda cevap veriyor. */
+.yardim-kart ul {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 1.1rem;
+  display: grid;
+  gap: .55rem;
+}
+.yardim-kart li {
+  position: relative;
+  padding-left: 1.1rem;
+  color: var(--text-2);
+  font-size: .96rem;
+  line-height: 1.5;
+}
+.yardim-kart li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: .6em;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--kiremit);
+}
 .yardim-adim { font-size: .74rem; font-weight: 800; text-transform: uppercase; letter-spacing: .08em; color: var(--petrol); }
 
 /* ---------- Yardımcılar ---------- */
@@ -534,5 +669,6 @@ a:hover { text-decoration-thickness: 2px; }
   body { font-size: 18px; }
 }
 
-/* AI CoRider bloğundaki gizlilik notu: gövdeden bir tık küçük, sessiz. */
+/* "Yakında" gibi yan notlar: gövdeden bir tık küçük, sessiz. */
+.kucuk { font-size: .9rem; opacity: .85; color: var(--text-2); max-width: 60ch; }
 .ozellik-metin p.kucuk { font-size: .9rem; opacity: .85; }

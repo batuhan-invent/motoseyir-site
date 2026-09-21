@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ny_baslik}}</title>
+<meta name="description" content="{{ny_aciklama}}">
+<link rel="canonical" href="{{kanonik}}">
+{{alternatifler}}
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Motoseyir">
+<meta property="og:locale" content="{{og_locale}}">
+<meta property="og:title" content="{{ny_og_baslik}}">
+<meta property="og:description" content="{{ny_og_aciklama}}">
+<meta property="og:url" content="{{kanonik}}">
+<meta property="og:image" content="https://motoseyir-app.com/img/og-kapak.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="apple-itunes-app" content="app-id={{uygulama_id}}">
+<meta name="theme-color" content="#0E6E73" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0E1315" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="{{kok}}img/favicon.png">
+<link rel="stylesheet" href="{{kok}}style.css">
+</head>
+<body>
+<a class="skip-link" href="#icerik">{{skip}}</a>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="logo" href="index.html">MOTO<em>SEYİR</em></a>
+    <nav aria-label="{{nav_etiket}}">
+      <ul class="nav">
+        <li><a href="index.html">{{nav_anasayfa}}</a></li>
+        <li><a href="index.html#ozellikler">{{nav_ozellikler}}</a></li>
+        <li><a href="ozellikler.html">{{footer_tum_ozellikler}}</a></li>
+        <li><a href="index.html#gizlilik">{{nav_gizlilik}}</a></li>
+        <li><a href="index.html#iletisim">{{nav_iletisim}}</a></li>
+      </ul>
+    </nav>
+    <div class="header-cta">
+      {{dil_secici}}
+      <a class="btn btn-ghost btn-sm" href="{{store}}">{{btn_indir}}</a>
+    </div>
+  </div>
+</header>
+
+<main id="icerik">
+  <section class="section" style="padding-bottom:1rem;">
+    <div class="wrap">
+      <span class="eyebrow">{{ny_eyebrow}}</span>
+      <h1 style="font-family:var(--serif); font-size:clamp(1.9rem,4.4vw,2.7rem); line-height:1.14; margin:0 0 1rem; max-width:22ch;">{{ny_h1}}</h1>
+      <p class="section-lead">{{ny_lead}}</p>
+    </div>
+  </section>
+
+  <section class="section section-2" style="padding-top:0;">
+    <div class="wrap">
+
+      <!-- HIZLI BAŞLANGIÇ — katlanmıyor: ilk sürüşün beş adımı
+           (uygulama içi Yardım sayfasıyla aynı sıra). -->
+      <div class="hizli-kart">
+        <h2>{{hb_baslik}}</h2>
+        <ol>
+          <li>{{hb1}}</li>
+          <li>{{hb2}}</li>
+          <li>{{hb3}}</li>
+          <li>{{hb4}}</li>
+          <li>{{hb5}}</li>
+        </ol>
+      </div>
+
+      <div class="yardim-liste">
+
+        <details class="yardim-kart" open>
+          <summary>{{k_rota}}<span class="ok">▾</span></summary>
+          <ul>
+            <li>{{rota1}}</li>
+            <li>{{rota2}}</li>
+            <li>{{rota3}}</li>
+            <li>{{rota4}}</li>
+            <li>{{rota5}}</li>
+            <li>{{rota6}}</li>
+          </ul>
+        </details>
+
+        <details class="yardim-kart">
+          <summary>{{k_turlar}}<span class="ok">▾</span></summary>
+          <ul>
+            <li>{{tur1}}</li>
+            <li>{{tur2}}</li>
+            <li>{{tur3}}</li>
+            <li>{{tur4}}</li>
+            <li>{{tur5}}</li>
+            <li>{{tur6}}</li>
+          </ul>
+        </details>
+
+        <details class="yardim-kart">
+          <summary>{{k_kayit}}<span class="ok">▾</span></summary>
+          <ul>
+            <li>{{kayit1}}</li>
+            <li>{{kayit2}}</li>
+            <li>{{kayit3}}</li>
+            <li>{{kayit4}}</li>
+            <li>{{kayit5}}</li>
+            <li>{{kayit6}}</li>
+          </ul>
+        </details>
+
+        <details class="yardim-kart">
+          <summary>{{k_gunluk}}<span class="ok">▾</span></summary>
+          <ul>
+            <li>{{gunluk1}}</li>
+            <li>{{gunluk2}}</li>
+            <li>{{gunluk3}}</li>
+            <li>{{gunluk4}}</li>
+            <li>{{gunluk5}}</li>
+          </ul>
+        </details>
+
+        <details class="yardim-kart">
+          <summary>{{k_grup}}<span class="ok">▾</span></summary>
+          <ul>
+            <li>{{grup1}}</li>
+            <li>{{grup2}}</li>
+            <li>{{grup3}}</li>
+            <li>{{grup4}}</li>
+            <li>{{grup5}}</li>
+            <li>{{grup6}}</li>
+          </ul>
+        </details>
+
+        <details class="yardim-kart">
+          <summary>{{k_interkom}}<span class="ok">▾</span></summary>
+          <ul>
+            <li>{{int1}}</li>
+            <li>{{int2}}</li>
+            <li>{{int3}}</li>
+            <li>{{int4}}</li>
+            <li>{{int5}}</li>
+          </ul>
+        </details>
+
+        <details class="yardim-kart">
+          <summary>{{k_topluluk}}<span class="ok">▾</span></summary>
+          <ul>
+            <li>{{top1}}</li>
+            <li>{{top2}}</li>
+            <li>{{top3}}</li>
+            <li>{{top4}}</li>
+            <li>{{top5}}</li>
+            <li>{{top6}}</li>
+          </ul>
+        </details>
+
+        <details class="yardim-kart">
+          <summary>{{k_ayarlar}}<span class="ok">▾</span></summary>
+          <ul>
+            <li>{{ayar1}}</li>
+            <li>{{ayar2}}</li>
+            <li>{{ayar3}}</li>
+            <li>{{ayar4}}</li>
+            <li>{{ayar5}}</li>
+            <li>{{ayar6}}</li>
+          </ul>
+        </details>
+
+        <details class="yardim-kart">
+          <summary>{{k_abonelik}}<span class="ok">▾</span></summary>
+          <ul>
+            <li>{{abo1}}</li>
+            <li>{{abo2}}</li>
+            <li>{{abo3}}</li>
+            <li>{{abo4}}</li>
+            <li>{{abo5}}</li>
+          </ul>
+        </details>
+
+      </div>
+
+      <p style="margin-top:2.5rem; color:var(--text-muted); font-size:.92rem;">{{ny_dip}}</p>
+      <p style="margin-top:1.5rem; display:flex; gap:1rem; flex-wrap:wrap;">
+        <a class="btn btn-ghost" href="index.html">{{btn_anasayfa}}</a>
+        <a class="btn btn-ghost" href="ozellikler.html">{{btn_tum_ozellikler}}</a>
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-ust">
+      <div>
+        <a class="logo" href="index.html" style="font-size:1.05rem;">MOTO<em>SEYİR</em></a>
+      </div>
+      <ul class="footer-links">
+        <li><a href="index.html">{{nav_anasayfa}}</a></li>
+        <li><a href="ozellikler.html">{{footer_tum_ozellikler}}</a></li>
+        <li><a href="{{gizlilik_url}}">{{nav_gizlilik}}{{gizlilik_tr_notu}}</a></li>
+        <li><a href="index.html#yenilikler">{{nav_yenilikler}}</a></li>
+        <li><a href="index.html#iletisim">{{nav_iletisim}}</a></li>
+        <li><a href="https://www.instagram.com/motoseyir.app/">Instagram</a></li>
+        <li><a href="{{store}}">App Store</a></li>
+      </ul>
+    </div>
+    <p>© {{yil}} Motoseyir. {{footer_haklar}}</p>
+    <div class="dil-altbilgi">
+      <span class="dil-altbilgi-baslik">{{footer_diller}}</span>
+      {{dil_altbilgi}}
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

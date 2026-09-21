@@ -1,5 +1,5 @@
 # Motoseyir tanıtım sitesi.
-# Kök alan adı https://motoseyir-app.com/ varsayılmıştır — bkz. KURULUM.md.
+# Kök alan adı https://motoseyir-app.com/ varsayılmıştır — bkz. README.md.
 User-agent: *
 Allow: /
 

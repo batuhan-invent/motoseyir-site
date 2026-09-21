@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{baslik}}</title>
+<meta name="description" content="{{aciklama}}">
+<link rel="canonical" href="{{kanonik}}">
+{{alternatifler}}
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Motoseyir">
+<meta property="og:locale" content="{{og_locale}}">
+<meta property="og:title" content="{{og_baslik}}">
+<meta property="og:description" content="{{og_aciklama}}">
+<meta property="og:url" content="{{kanonik}}">
+<meta property="og:image" content="https://motoseyir-app.com/img/og-kapak.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- Apple akıllı afiş: iOS Safari'de sayfanın üstünde "App Store'da aç" şeridi. -->
+<meta name="apple-itunes-app" content="app-id={{uygulama_id}}">
+
+<meta name="theme-color" content="#0E6E73" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0E1315" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="{{kok}}img/favicon.png">
+
+<link rel="stylesheet" href="{{kok}}style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Motoseyir",
+  "operatingSystem": "iOS",
+  "applicationCategory": "NavigationApplication",
+  "inLanguage": "{{lang}}",
+  "url": "{{kanonik}}",
+  "image": "https://motoseyir-app.com/img/og-kapak.jpg",
+  "description": "{{jsonld_aciklama}}",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "{{plan_ucretsiz_ad}}",
+      "price": "0",
+      "priceCurrency": "EUR",
+      "description": "{{jsonld_ucretsiz}}"
+    },
+    {
+      "@type": "Offer",
+      "name": "Motoseyir Pro",
+      "category": "subscription",
+      "description": "{{jsonld_pro}}"
+    }
+  ],
+  "downloadUrl": "{{store}}"
+}
+</script>
+</head>
+<body id="top">
+<a class="skip-link" href="#icerik">{{skip}}</a>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="logo" href="#top">MOTO<em>SEYİR</em></a>
+    <nav aria-label="{{nav_etiket}}">
+      <ul class="nav">
+        <li><a href="#ozellikler">{{nav_ozellikler}}</a></li>
+        <li><a href="nasil-yapilir.html">{{nav_nasil}}</a></li>
+        <li><a href="#fiyat">{{nav_fiyat}}</a></li>
+        <li><a href="#gizlilik">{{nav_gizlilik}}</a></li>
+        <li><a href="#yenilikler">{{nav_yenilikler}}</a></li>
+        <li><a href="#iletisim">{{nav_iletisim}}</a></li>
+      </ul>
+    </nav>
+    <div class="header-cta">
+      {{dil_secici}}
+      <a class="btn btn-ghost btn-sm" href="{{store}}">{{btn_indir}}</a>
+    </div>
+  </div>
+</header>
+
+<main id="icerik">
+
+  <!-- HERO -->
+  <section class="hero foto-arka">
+    <img class="foto-arka-img" src="{{kok}}img/hero-sahil-yolu.jpg" alt="{{hero_alt}}" fetchpriority="high">
+    <div class="foto-arka-golge" aria-hidden="true"></div>
+    <div class="wrap">
+      <div class="hero-icerik">
+        <span class="eyebrow">{{hero_eyebrow}}</span>
+        <h1>{{hero_h1}}</h1>
+        <p class="lead">{{hero_lead}}</p>
+        <div class="hero-cta">
+          <a class="btn btn-light" href="{{store}}">{{btn_store}}</a>
+          <a class="btn btn-ghost" style="border-color:rgba(243,241,236,.35); color:var(--asfalt-metin);" href="#ozellikler">{{btn_ozellikleri_gor}}</a>
+        </div>
+        <p class="hero-microcopy">{{hero_micro}}</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="rota-ayrac koyu" aria-hidden="true">
+    <svg viewBox="0 0 1200 34" preserveAspectRatio="none"><path class="cizgi" d="M0,17 C150,2 300,32 450,17 C600,2 750,32 900,17 C1050,2 1150,17 1200,17"/><circle class="nokta" cx="300" cy="20" r="4"/><circle class="nokta" cx="750" cy="14" r="4"/></svg>
+  </div>
+
+  <!-- NEDEN FARKLI -->
+  <section class="neden foto-arka">
+    <img class="foto-arka-img" src="{{kok}}img/kask-yansima.jpg" alt="" loading="lazy">
+    <div class="foto-arka-golge" aria-hidden="true"></div>
+    <div class="wrap">
+      <span class="eyebrow">{{neden_eyebrow}}</span>
+      <p class="soz">{{neden_soz}}</p>
+      <p class="soz-alt">{{neden_alt}}</p>
+    </div>
+  </section>
+
+  <div class="rota-ayrac koyu" aria-hidden="true">
+    <svg viewBox="0 0 1200 34" preserveAspectRatio="none"><path class="cizgi" d="M0,17 C150,32 300,2 450,17 C600,32 750,2 900,17 C1050,32 1150,17 1200,17"/><circle class="nokta" cx="450" cy="17" r="4"/><circle class="nokta" cx="1050" cy="17" r="4"/></svg>
+  </div>
+
+  <!-- ÖZELLİKLER -->
+  <section class="section" id="ozellikler">
+    <div class="wrap">
+      <span class="eyebrow">{{nav_ozellikler}}</span>
+      <h2>{{oz_h2}}</h2>
+      <p class="section-lead">{{oz_lead}}</p>
+
+      <!-- 1. En kısa rota -->
+      <div class="ozellik-satir">
+        <div class="ozellik-metin">
+          <span class="ozellik-etiket">{{f1_etiket}}</span>
+          <h3>{{f1_h3}}</h3>
+          <p>{{f1_p}}</p>
+        </div>
+        <div class="ozellik-gorsel">
+          <img src="{{kok}}img/en-kisa-rota.jpg" width="414" height="900" alt="{{f1_alt}}" loading="lazy">
+        </div>
+      </div>
+
+      <!-- 2. Köy yolları / sahil -->
+      <div class="ozellik-satir ters">
+        <div class="ozellik-metin">
+          <span class="ozellik-etiket">{{f2_etiket}}</span>
+          <h3>{{f2_h3}}</h3>
+          <p>{{f2_p}}</p>
+        </div>
+        <div class="ozellik-gorsel">
+          <img src="{{kok}}img/koy-yollari.jpg" width="414" height="900" alt="{{f2_alt}}" loading="lazy">
+        </div>
+      </div>
+
+      <!-- 3. Çok duraklı sıralama (kanıt çifti) -->
+      <div class="ozellik-satir">
+        <div class="ozellik-metin">
+          <span class="ozellik-etiket">{{f3_etiket}}</span>
+          <h3>{{f3_h3}}</h3>
+          <p>{{f3_p}}</p>
+        </div>
+        <div class="ozellik-gorsel ikili">
+          <figure>
+            <img src="{{kok}}img/cok-duraklar-kendi-sira.jpg" width="413" height="900" alt="{{f3_alt_a}}" loading="lazy">
+            <figcaption>{{f3_altyazi_a}} — <span class="km-eski">{{km_eski}}</span></figcaption>
+          </figure>
+          <figure>
+            <img src="{{kok}}img/cok-duraklar-en-uygun.jpg" width="413" height="900" alt="{{f3_alt_b}}" loading="lazy">
+            <figcaption>{{f3_altyazi_b}} — <span class="km-yeni">{{km_yeni}}</span></figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <!-- 4. Efsane rotalar -->
+      <div class="ozellik-satir ters">
+        <div class="ozellik-metin">
+          <span class="ozellik-etiket">{{f4_etiket}}</span>
+          <h3>{{f4_h3}}</h3>
+          <p>{{f4_p}}</p>
+        </div>
+        <div class="ozellik-gorsel">
+          <img src="{{kok}}img/efsane-rotalar.jpg" width="413" height="900" alt="{{f4_alt}}" loading="lazy">
+        </div>
+      </div>
+
+      <!-- 5. Grup sürüşü + sürüşe çağır + interkom (1.1.0) -->
+      <div class="ozellik-satir">
+        <div class="ozellik-metin">
+          <span class="ozellik-etiket">{{f5_etiket}}</span>
+          <h3>{{f5_h3}}</h3>
+          <p>{{f5_p}}</p>
+          <p>{{f5_p2}}</p>
+        </div>
+        <div class="ozellik-gorsel">
+          <img src="{{kok}}img/grup-surusu.jpg" width="414" height="900" alt="{{f5_alt}}" loading="lazy">
+        </div>
+      </div>
+
+      <!-- 6. Tur günlüğü -->
+      <div class="ozellik-satir ters">
+        <div class="ozellik-metin">
+          <span class="ozellik-etiket">{{f6_etiket}}</span>
+          <h3>{{f6_h3}}</h3>
+          <p>{{f6_p}}</p>
+        </div>
+        <div class="ozellik-gorsel">
+          <img src="{{kok}}img/tur-gunlugu.jpg" width="413" height="900" alt="{{f6_alt}}" loading="lazy">
+        </div>
+      </div>
+
+      <!-- 7. Hava durumu -->
+      <div class="ozellik-satir">
+        <div class="ozellik-metin">
+          <span class="ozellik-etiket">{{f7_etiket}}</span>
+          <h3>{{f7_h3}}</h3>
+          <p>{{f7_p}}</p>
+        </div>
+        <div class="ozellik-gorsel">
+          <img src="{{kok}}img/hava-durumu.jpg" width="414" height="900" alt="{{f7_alt}}" loading="lazy">
+        </div>
+      </div>
+
+      <!-- 8. Sürüş kaydı + parkur -->
+      <div class="ozellik-satir ters">
+        <div class="ozellik-metin">
+          <span class="ozellik-etiket">{{f8_etiket}}</span>
+          <h3>{{f8_h3}}</h3>
+          <p>{{f8_p}}</p>
+        </div>
+        <div class="ozellik-gorsel">
+          <img src="{{kok}}img/parkur-istatistik.jpg" width="414" height="900" alt="{{f8_alt}}" loading="lazy">
+        </div>
+      </div>
+
+      <!-- 9. Keşfet -->
+      <div class="ozellik-satir">
+        <div class="ozellik-metin">
+          <span class="ozellik-etiket">{{f9_etiket}}</span>
+          <h3>{{f9_h3}}</h3>
+          <p>{{f9_p}}</p>
+        </div>
+        <div class="ozellik-gorsel">
+          <img src="{{kok}}img/kesfet.jpg" width="414" height="900" alt="{{f9_alt}}" loading="lazy">
+        </div>
+      </div>
+
+      <h3 style="margin-top:3rem; font-size:1.1rem;">{{ayrica_h3}}</h3>
+      <ul class="diger-liste" style="margin-top:1.25rem;">
+        <li>
+          <h3>{{d1_h3}}</h3>
+          <p>{{d1_p}}</p>
+        </li>
+        <li>
+          <h3>{{d2_h3}}</h3>
+          <p>{{d2_p}}</p>
+        </li>
+        <li>
+          <h3>{{d3_h3}}</h3>
+          <p>{{d3_p}}</p>
+        </li>
+        <li>
+          <h3>{{d4_h3}}</h3>
+          <p>{{d4_p}}</p>
+        </li>
+        <li>
+          <h3>{{d5_h3}}</h3>
+          <p>{{d5_p}}</p>
+        </li>
+      </ul>
+
+      <!-- AI CoRider mağaza sürümünde YOK: tek satır "Yakında", ayrıntı yok. -->
+      <p class="kucuk" style="margin-top:1.75rem;">{{corider_satiri}}</p>
+
+      <p style="margin-top:2.5rem; display:flex; gap:1rem; flex-wrap:wrap;">
+        <a class="btn btn-ghost" href="ozellikler.html">{{btn_tum_ozellikler}}</a>
+        <a class="btn btn-ghost" href="nasil-yapilir.html">{{btn_nasil_yapilir}}</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- ÜCRETSİZ / PRO -->
+  <section class="section section-2" id="fiyat">
+    <div class="wrap">
+      <span class="eyebrow">{{fiyat_eyebrow}}</span>
+      <h2>{{fiyat_h2}}</h2>
+      <p class="section-lead">{{fiyat_lead}}</p>
+      <div class="plan-grid">
+        <div class="plan">
+          <h3>{{plan_ucretsiz_ad}}</h3>
+          <p class="fiyat-notu">{{plan_ucretsiz_notu}}</p>
+          <ul>
+            <li>{{pu1}}</li>
+            <li>{{pu2}}</li>
+            <li>{{pu3}}</li>
+            <li>{{pu4}}</li>
+            <li>{{pu5}}</li>
+          </ul>
+        </div>
+        <div class="plan on-cikan">
+          <h3>Motoseyir Pro</h3>
+          <p class="fiyat-notu">{{plan_pro_notu}}</p>
+          <ul>
+            <li>{{pp1}}</li>
+            <li>{{pp2}}</li>
+            <li>{{pp3}}</li>
+            <li>{{pp4}}</li>
+            <li>{{pp5}}</li>
+            <li>{{pp6}}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="rota-ayrac" aria-hidden="true">
+    <svg viewBox="0 0 1200 34" preserveAspectRatio="none"><path class="cizgi" d="M0,17 C150,2 300,32 450,17 C600,2 750,32 900,17 C1050,2 1150,17 1200,17"/><circle class="nokta" cx="300" cy="20" r="4"/><circle class="nokta" cx="900" cy="20" r="4"/></svg>
+  </div>
+
+  <!-- GİZLİLİK — kaynak: uygulama içi gizlilik politikasının "Kısaca" bölümü -->
+  <section class="section" id="gizlilik">
+    <div class="wrap">
+      <span class="eyebrow">{{gizlilik_eyebrow}}</span>
+      <h2>{{gizlilik_h2}}</h2>
+      <p class="section-lead">{{gizlilik_lead}}</p>
+      <ul class="gizlilik-liste">
+        <li>{{g1}}</li>
+        <li>{{g2}}</li>
+        <li>{{g3}}</li>
+        <li>{{g4}}</li>
+        <li>{{g5}}</li>
+        <li>{{g6}}</li>
+      </ul>
+      <p><a href="{{gizlilik_url}}">{{gizlilik_baglanti}}</a></p>
+    </div>
+  </section>
+
+  <!-- YENİLİKLER -->
+  <section class="section section-2" id="yenilikler">
+    <div class="wrap">
+      <span class="eyebrow">{{yeni_eyebrow}}</span>
+      <h2>{{yeni_h2}}</h2>
+      <p class="section-lead">{{yeni_lead}}</p>
+
+      <!-- YENİ SÜRÜM ÇIKINCA: metinler dil/<kod>.json içindeki y110_* ve y107_*
+           anahtarlarında; yeni sürüm için şablona yeni bir <article> eklenir. -->
+      <article class="surum">
+        <div class="surum-baslik">
+          <span class="surum-no">1.1.0</span>
+          <span class="surum-tarih">{{y110_tarih}}</span>
+        </div>
+        <ul>
+          <li>{{y110_1}}</li>
+          <li>{{y110_2}}</li>
+          <li>{{y110_3}}</li>
+          <li>{{y110_4}}</li>
+          <li>{{y110_5}}</li>
+          <li>{{y110_6}}</li>
+        </ul>
+      </article>
+
+      <article class="surum">
+        <div class="surum-baslik">
+          <span class="surum-no">1.0.7</span>
+          <span class="surum-tarih">{{y107_tarih}}</span>
+        </div>
+        <ul>
+          <li>{{y107_1}}</li>
+          <li>{{y107_2}}</li>
+          <li>{{y107_3}}</li>
+          <li>{{y107_4}}</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <!-- İLETİŞİM -->
+  <section class="section" id="iletisim">
+    <div class="wrap">
+      <span class="eyebrow">{{nav_iletisim}}</span>
+      <h2>{{iletisim_h2}}</h2>
+      <div class="iletisim-grid">
+        <div class="iletisim-kart">
+          <h3>{{iletisim_destek_h3}}</h3>
+          <p>{{iletisim_destek_p}}</p>
+        </div>
+        <div class="iletisim-kart">
+          <h3>Instagram</h3>
+          <p>{{iletisim_insta_p}}</p>
+          <a class="btn btn-ghost btn-sm" href="https://www.instagram.com/motoseyir.app/">@motoseyir.app</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-ust">
+      <div>
+        <a class="logo" href="#top" style="font-size:1.05rem;">MOTO<em>SEYİR</em></a>
+      </div>
+      <ul class="footer-links">
+        <li><a href="#ozellikler">{{nav_ozellikler}}</a></li>
+        <li><a href="ozellikler.html">{{footer_tum_ozellikler}}</a></li>
+        <li><a href="nasil-yapilir.html">{{nav_nasil}}</a></li>
+        <li><a href="{{gizlilik_url}}">{{nav_gizlilik}}{{gizlilik_tr_notu}}</a></li>
+        <li><a href="#yenilikler">{{nav_yenilikler}}</a></li>
+        <li><a href="#iletisim">{{nav_iletisim}}</a></li>
+        <li><a href="https://www.instagram.com/motoseyir.app/">Instagram</a></li>
+        <li><a href="{{store}}">App Store</a></li>
+      </ul>
+    </div>
+    <p>© {{yil}} Motoseyir. {{footer_haklar}}</p>
+    <div class="dil-altbilgi">
+      <span class="dil-altbilgi-baslik">{{footer_diller}}</span>
+      {{dil_altbilgi}}
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

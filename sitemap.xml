@@ -1,27 +1,908 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  Motoseyir tanıtım sitesi — sitemap.
-  Alan adı https://motoseyir-app.com/ varsayılmıştır (kök). Site başka bir
-  yola (ör. /tanitim/) taşınırsa bu dosyadaki ve HTML'lerdeki canonical/OG/
-  JSON-LD URL'leri aynı önekle güncellenmelidir (bkz. KURULUM.md).
+  Motoseyir tanıtım sitesi — sitemap. OTOMATİK ÜRETİLDİ: python3 uret.py
+  Elle düzenlemeyin; dil listesi ve sayfalar uret.py içinde.
 -->
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://motoseyir-app.com/</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://motoseyir-app.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://motoseyir-app.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://motoseyir-app.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://motoseyir-app.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://motoseyir-app.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://motoseyir-app.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://motoseyir-app.com/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://motoseyir-app.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://motoseyir-app.com/cs/"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://motoseyir-app.com/sk/"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://motoseyir-app.com/hu/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://motoseyir-app.com/ro/"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://motoseyir-app.com/hr/"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://motoseyir-app.com/el/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motoseyir-app.com/en/"/>
+  </url>
+  <url>
+    <loc>https://motoseyir-app.com/en/</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://motoseyir-app.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://motoseyir-app.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://motoseyir-app.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://motoseyir-app.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://motoseyir-app.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://motoseyir-app.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://motoseyir-app.com/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://motoseyir-app.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://motoseyir-app.com/cs/"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://motoseyir-app.com/sk/"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://motoseyir-app.com/hu/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://motoseyir-app.com/ro/"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://motoseyir-app.com/hr/"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://motoseyir-app.com/el/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motoseyir-app.com/en/"/>
+  </url>
+  <url>
+    <loc>https://motoseyir-app.com/de/</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://motoseyir-app.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://motoseyir-app.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://motoseyir-app.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://motoseyir-app.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://motoseyir-app.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://motoseyir-app.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://motoseyir-app.com/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://motoseyir-app.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://motoseyir-app.com/cs/"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://motoseyir-app.com/sk/"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://motoseyir-app.com/hu/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://motoseyir-app.com/ro/"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://motoseyir-app.com/hr/"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://motoseyir-app.com/el/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motoseyir-app.com/en/"/>
+  </url>
+  <url>
+    <loc>https://motoseyir-app.com/fr/</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://motoseyir-app.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://motoseyir-app.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://motoseyir-app.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://motoseyir-app.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://motoseyir-app.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://motoseyir-app.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://motoseyir-app.com/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://motoseyir-app.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://motoseyir-app.com/cs/"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://motoseyir-app.com/sk/"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://motoseyir-app.com/hu/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://motoseyir-app.com/ro/"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://motoseyir-app.com/hr/"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://motoseyir-app.com/el/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motoseyir-app.com/en/"/>
+  </url>
+  <url>
+    <loc>https://motoseyir-app.com/it/</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://motoseyir-app.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://motoseyir-app.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://motoseyir-app.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://motoseyir-app.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://motoseyir-app.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://motoseyir-app.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://motoseyir-app.com/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://motoseyir-app.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://motoseyir-app.com/cs/"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://motoseyir-app.com/sk/"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://motoseyir-app.com/hu/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://motoseyir-app.com/ro/"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://motoseyir-app.com/hr/"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://motoseyir-app.com/el/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motoseyir-app.com/en/"/>
+  </url>
+  <url>
+    <loc>https://motoseyir-app.com/es/</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://motoseyir-app.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://motoseyir-app.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://motoseyir-app.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://motoseyir-app.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://motoseyir-app.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://motoseyir-app.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://motoseyir-app.com/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://motoseyir-app.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://motoseyir-app.com/cs/"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://motoseyir-app.com/sk/"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://motoseyir-app.com/hu/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://motoseyir-app.com/ro/"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://motoseyir-app.com/hr/"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://motoseyir-app.com/el/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motoseyir-app.com/en/"/>
+  </url>
+  <url>
+    <loc>https://motoseyir-app.com/nl/</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://motoseyir-app.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://motoseyir-app.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://motoseyir-app.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://motoseyir-app.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://motoseyir-app.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://motoseyir-app.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://motoseyir-app.com/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://motoseyir-app.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://motoseyir-app.com/cs/"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://motoseyir-app.com/sk/"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://motoseyir-app.com/hu/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://motoseyir-app.com/ro/"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://motoseyir-app.com/hr/"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://motoseyir-app.com/el/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motoseyir-app.com/en/"/>
+  </url>
+  <url>
+    <loc>https://motoseyir-app.com/pl/</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://motoseyir-app.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://motoseyir-app.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://motoseyir-app.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://motoseyir-app.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://motoseyir-app.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://motoseyir-app.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://motoseyir-app.com/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://motoseyir-app.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://motoseyir-app.com/cs/"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://motoseyir-app.com/sk/"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://motoseyir-app.com/hu/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://motoseyir-app.com/ro/"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://motoseyir-app.com/hr/"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://motoseyir-app.com/el/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motoseyir-app.com/en/"/>
+  </url>
+  <url>
+    <loc>https://motoseyir-app.com/cs/</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://motoseyir-app.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://motoseyir-app.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://motoseyir-app.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://motoseyir-app.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://motoseyir-app.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://motoseyir-app.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://motoseyir-app.com/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://motoseyir-app.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://motoseyir-app.com/cs/"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://motoseyir-app.com/sk/"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://motoseyir-app.com/hu/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://motoseyir-app.com/ro/"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://motoseyir-app.com/hr/"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://motoseyir-app.com/el/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motoseyir-app.com/en/"/>
+  </url>
+  <url>
+    <loc>https://motoseyir-app.com/sk/</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://motoseyir-app.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://motoseyir-app.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://motoseyir-app.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://motoseyir-app.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://motoseyir-app.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://motoseyir-app.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://motoseyir-app.com/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://motoseyir-app.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://motoseyir-app.com/cs/"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://motoseyir-app.com/sk/"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://motoseyir-app.com/hu/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://motoseyir-app.com/ro/"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://motoseyir-app.com/hr/"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://motoseyir-app.com/el/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motoseyir-app.com/en/"/>
+  </url>
+  <url>
+    <loc>https://motoseyir-app.com/hu/</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://motoseyir-app.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://motoseyir-app.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://motoseyir-app.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://motoseyir-app.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://motoseyir-app.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://motoseyir-app.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://motoseyir-app.com/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://motoseyir-app.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://motoseyir-app.com/cs/"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://motoseyir-app.com/sk/"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://motoseyir-app.com/hu/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://motoseyir-app.com/ro/"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://motoseyir-app.com/hr/"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://motoseyir-app.com/el/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motoseyir-app.com/en/"/>
+  </url>
+  <url>
+    <loc>https://motoseyir-app.com/ro/</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://motoseyir-app.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://motoseyir-app.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://motoseyir-app.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://motoseyir-app.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://motoseyir-app.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://motoseyir-app.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://motoseyir-app.com/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://motoseyir-app.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://motoseyir-app.com/cs/"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://motoseyir-app.com/sk/"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://motoseyir-app.com/hu/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://motoseyir-app.com/ro/"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://motoseyir-app.com/hr/"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://motoseyir-app.com/el/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motoseyir-app.com/en/"/>
+  </url>
+  <url>
+    <loc>https://motoseyir-app.com/hr/</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://motoseyir-app.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://motoseyir-app.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://motoseyir-app.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://motoseyir-app.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://motoseyir-app.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://motoseyir-app.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://motoseyir-app.com/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://motoseyir-app.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://motoseyir-app.com/cs/"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://motoseyir-app.com/sk/"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://motoseyir-app.com/hu/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://motoseyir-app.com/ro/"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://motoseyir-app.com/hr/"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://motoseyir-app.com/el/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motoseyir-app.com/en/"/>
+  </url>
+  <url>
+    <loc>https://motoseyir-app.com/el/</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://motoseyir-app.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://motoseyir-app.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://motoseyir-app.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://motoseyir-app.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://motoseyir-app.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://motoseyir-app.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://motoseyir-app.com/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://motoseyir-app.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://motoseyir-app.com/cs/"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://motoseyir-app.com/sk/"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://motoseyir-app.com/hu/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://motoseyir-app.com/ro/"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://motoseyir-app.com/hr/"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://motoseyir-app.com/el/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motoseyir-app.com/en/"/>
   </url>
   <url>
     <loc>https://motoseyir-app.com/ozellikler.html</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://motoseyir-app.com/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://motoseyir-app.com/en/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://motoseyir-app.com/de/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://motoseyir-app.com/fr/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://motoseyir-app.com/it/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://motoseyir-app.com/es/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://motoseyir-app.com/nl/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://motoseyir-app.com/pl/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://motoseyir-app.com/cs/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://motoseyir-app.com/sk/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://motoseyir-app.com/hu/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://motoseyir-app.com/ro/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://motoseyir-app.com/hr/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://motoseyir-app.com/el/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motoseyir-app.com/en/ozellikler.html"/>
+  </url>
+  <url>
+    <loc>https://motoseyir-app.com/en/ozellikler.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://motoseyir-app.com/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://motoseyir-app.com/en/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://motoseyir-app.com/de/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://motoseyir-app.com/fr/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://motoseyir-app.com/it/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://motoseyir-app.com/es/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://motoseyir-app.com/nl/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://motoseyir-app.com/pl/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://motoseyir-app.com/cs/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://motoseyir-app.com/sk/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://motoseyir-app.com/hu/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://motoseyir-app.com/ro/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://motoseyir-app.com/hr/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://motoseyir-app.com/el/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motoseyir-app.com/en/ozellikler.html"/>
+  </url>
+  <url>
+    <loc>https://motoseyir-app.com/de/ozellikler.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://motoseyir-app.com/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://motoseyir-app.com/en/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://motoseyir-app.com/de/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://motoseyir-app.com/fr/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://motoseyir-app.com/it/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://motoseyir-app.com/es/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://motoseyir-app.com/nl/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://motoseyir-app.com/pl/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://motoseyir-app.com/cs/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://motoseyir-app.com/sk/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://motoseyir-app.com/hu/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://motoseyir-app.com/ro/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://motoseyir-app.com/hr/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://motoseyir-app.com/el/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motoseyir-app.com/en/ozellikler.html"/>
+  </url>
+  <url>
+    <loc>https://motoseyir-app.com/fr/ozellikler.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://motoseyir-app.com/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://motoseyir-app.com/en/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://motoseyir-app.com/de/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://motoseyir-app.com/fr/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://motoseyir-app.com/it/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://motoseyir-app.com/es/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://motoseyir-app.com/nl/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://motoseyir-app.com/pl/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://motoseyir-app.com/cs/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://motoseyir-app.com/sk/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://motoseyir-app.com/hu/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://motoseyir-app.com/ro/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://motoseyir-app.com/hr/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://motoseyir-app.com/el/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motoseyir-app.com/en/ozellikler.html"/>
+  </url>
+  <url>
+    <loc>https://motoseyir-app.com/it/ozellikler.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://motoseyir-app.com/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://motoseyir-app.com/en/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://motoseyir-app.com/de/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://motoseyir-app.com/fr/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://motoseyir-app.com/it/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://motoseyir-app.com/es/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://motoseyir-app.com/nl/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://motoseyir-app.com/pl/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://motoseyir-app.com/cs/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://motoseyir-app.com/sk/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://motoseyir-app.com/hu/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://motoseyir-app.com/ro/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://motoseyir-app.com/hr/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://motoseyir-app.com/el/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motoseyir-app.com/en/ozellikler.html"/>
+  </url>
+  <url>
+    <loc>https://motoseyir-app.com/es/ozellikler.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://motoseyir-app.com/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://motoseyir-app.com/en/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://motoseyir-app.com/de/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://motoseyir-app.com/fr/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://motoseyir-app.com/it/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://motoseyir-app.com/es/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://motoseyir-app.com/nl/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://motoseyir-app.com/pl/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://motoseyir-app.com/cs/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://motoseyir-app.com/sk/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://motoseyir-app.com/hu/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://motoseyir-app.com/ro/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://motoseyir-app.com/hr/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://motoseyir-app.com/el/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motoseyir-app.com/en/ozellikler.html"/>
+  </url>
+  <url>
+    <loc>https://motoseyir-app.com/nl/ozellikler.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://motoseyir-app.com/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://motoseyir-app.com/en/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://motoseyir-app.com/de/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://motoseyir-app.com/fr/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://motoseyir-app.com/it/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://motoseyir-app.com/es/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://motoseyir-app.com/nl/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://motoseyir-app.com/pl/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://motoseyir-app.com/cs/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://motoseyir-app.com/sk/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://motoseyir-app.com/hu/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://motoseyir-app.com/ro/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://motoseyir-app.com/hr/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://motoseyir-app.com/el/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motoseyir-app.com/en/ozellikler.html"/>
+  </url>
+  <url>
+    <loc>https://motoseyir-app.com/pl/ozellikler.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://motoseyir-app.com/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://motoseyir-app.com/en/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://motoseyir-app.com/de/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://motoseyir-app.com/fr/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://motoseyir-app.com/it/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://motoseyir-app.com/es/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://motoseyir-app.com/nl/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://motoseyir-app.com/pl/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://motoseyir-app.com/cs/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://motoseyir-app.com/sk/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://motoseyir-app.com/hu/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://motoseyir-app.com/ro/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://motoseyir-app.com/hr/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://motoseyir-app.com/el/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motoseyir-app.com/en/ozellikler.html"/>
+  </url>
+  <url>
+    <loc>https://motoseyir-app.com/cs/ozellikler.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://motoseyir-app.com/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://motoseyir-app.com/en/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://motoseyir-app.com/de/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://motoseyir-app.com/fr/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://motoseyir-app.com/it/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://motoseyir-app.com/es/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://motoseyir-app.com/nl/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://motoseyir-app.com/pl/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://motoseyir-app.com/cs/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://motoseyir-app.com/sk/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://motoseyir-app.com/hu/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://motoseyir-app.com/ro/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://motoseyir-app.com/hr/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://motoseyir-app.com/el/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motoseyir-app.com/en/ozellikler.html"/>
+  </url>
+  <url>
+    <loc>https://motoseyir-app.com/sk/ozellikler.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://motoseyir-app.com/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://motoseyir-app.com/en/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://motoseyir-app.com/de/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://motoseyir-app.com/fr/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://motoseyir-app.com/it/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://motoseyir-app.com/es/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://motoseyir-app.com/nl/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://motoseyir-app.com/pl/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://motoseyir-app.com/cs/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://motoseyir-app.com/sk/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://motoseyir-app.com/hu/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://motoseyir-app.com/ro/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://motoseyir-app.com/hr/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://motoseyir-app.com/el/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motoseyir-app.com/en/ozellikler.html"/>
+  </url>
+  <url>
+    <loc>https://motoseyir-app.com/hu/ozellikler.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://motoseyir-app.com/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://motoseyir-app.com/en/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://motoseyir-app.com/de/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://motoseyir-app.com/fr/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://motoseyir-app.com/it/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://motoseyir-app.com/es/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://motoseyir-app.com/nl/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://motoseyir-app.com/pl/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://motoseyir-app.com/cs/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://motoseyir-app.com/sk/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://motoseyir-app.com/hu/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://motoseyir-app.com/ro/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://motoseyir-app.com/hr/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://motoseyir-app.com/el/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motoseyir-app.com/en/ozellikler.html"/>
+  </url>
+  <url>
+    <loc>https://motoseyir-app.com/ro/ozellikler.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://motoseyir-app.com/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://motoseyir-app.com/en/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://motoseyir-app.com/de/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://motoseyir-app.com/fr/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://motoseyir-app.com/it/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://motoseyir-app.com/es/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://motoseyir-app.com/nl/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://motoseyir-app.com/pl/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://motoseyir-app.com/cs/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://motoseyir-app.com/sk/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://motoseyir-app.com/hu/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://motoseyir-app.com/ro/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://motoseyir-app.com/hr/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://motoseyir-app.com/el/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motoseyir-app.com/en/ozellikler.html"/>
+  </url>
+  <url>
+    <loc>https://motoseyir-app.com/hr/ozellikler.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://motoseyir-app.com/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://motoseyir-app.com/en/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://motoseyir-app.com/de/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://motoseyir-app.com/fr/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://motoseyir-app.com/it/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://motoseyir-app.com/es/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://motoseyir-app.com/nl/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://motoseyir-app.com/pl/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://motoseyir-app.com/cs/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://motoseyir-app.com/sk/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://motoseyir-app.com/hu/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://motoseyir-app.com/ro/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://motoseyir-app.com/hr/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://motoseyir-app.com/el/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motoseyir-app.com/en/ozellikler.html"/>
+  </url>
+  <url>
+    <loc>https://motoseyir-app.com/el/ozellikler.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://motoseyir-app.com/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://motoseyir-app.com/en/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://motoseyir-app.com/de/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://motoseyir-app.com/fr/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://motoseyir-app.com/it/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://motoseyir-app.com/es/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://motoseyir-app.com/nl/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://motoseyir-app.com/pl/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://motoseyir-app.com/cs/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://motoseyir-app.com/sk/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://motoseyir-app.com/hu/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://motoseyir-app.com/ro/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://motoseyir-app.com/hr/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://motoseyir-app.com/el/ozellikler.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motoseyir-app.com/en/ozellikler.html"/>
   </url>
   <url>
     <loc>https://motoseyir-app.com/nasil-yapilir.html</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://motoseyir-app.com/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://motoseyir-app.com/en/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://motoseyir-app.com/de/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://motoseyir-app.com/fr/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://motoseyir-app.com/it/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://motoseyir-app.com/es/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://motoseyir-app.com/nl/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://motoseyir-app.com/pl/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://motoseyir-app.com/cs/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://motoseyir-app.com/sk/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://motoseyir-app.com/hu/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://motoseyir-app.com/ro/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://motoseyir-app.com/hr/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://motoseyir-app.com/el/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motoseyir-app.com/en/nasil-yapilir.html"/>
+  </url>
+  <url>
+    <loc>https://motoseyir-app.com/en/nasil-yapilir.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://motoseyir-app.com/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://motoseyir-app.com/en/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://motoseyir-app.com/de/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://motoseyir-app.com/fr/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://motoseyir-app.com/it/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://motoseyir-app.com/es/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://motoseyir-app.com/nl/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://motoseyir-app.com/pl/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://motoseyir-app.com/cs/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://motoseyir-app.com/sk/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://motoseyir-app.com/hu/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://motoseyir-app.com/ro/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://motoseyir-app.com/hr/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://motoseyir-app.com/el/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motoseyir-app.com/en/nasil-yapilir.html"/>
+  </url>
+  <url>
+    <loc>https://motoseyir-app.com/de/nasil-yapilir.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://motoseyir-app.com/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://motoseyir-app.com/en/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://motoseyir-app.com/de/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://motoseyir-app.com/fr/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://motoseyir-app.com/it/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://motoseyir-app.com/es/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://motoseyir-app.com/nl/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://motoseyir-app.com/pl/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://motoseyir-app.com/cs/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://motoseyir-app.com/sk/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://motoseyir-app.com/hu/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://motoseyir-app.com/ro/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://motoseyir-app.com/hr/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://motoseyir-app.com/el/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motoseyir-app.com/en/nasil-yapilir.html"/>
+  </url>
+  <url>
+    <loc>https://motoseyir-app.com/fr/nasil-yapilir.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://motoseyir-app.com/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://motoseyir-app.com/en/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://motoseyir-app.com/de/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://motoseyir-app.com/fr/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://motoseyir-app.com/it/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://motoseyir-app.com/es/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://motoseyir-app.com/nl/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://motoseyir-app.com/pl/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://motoseyir-app.com/cs/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://motoseyir-app.com/sk/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://motoseyir-app.com/hu/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://motoseyir-app.com/ro/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://motoseyir-app.com/hr/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://motoseyir-app.com/el/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motoseyir-app.com/en/nasil-yapilir.html"/>
+  </url>
+  <url>
+    <loc>https://motoseyir-app.com/it/nasil-yapilir.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://motoseyir-app.com/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://motoseyir-app.com/en/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://motoseyir-app.com/de/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://motoseyir-app.com/fr/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://motoseyir-app.com/it/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://motoseyir-app.com/es/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://motoseyir-app.com/nl/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://motoseyir-app.com/pl/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://motoseyir-app.com/cs/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://motoseyir-app.com/sk/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://motoseyir-app.com/hu/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://motoseyir-app.com/ro/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://motoseyir-app.com/hr/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://motoseyir-app.com/el/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motoseyir-app.com/en/nasil-yapilir.html"/>
+  </url>
+  <url>
+    <loc>https://motoseyir-app.com/es/nasil-yapilir.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://motoseyir-app.com/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://motoseyir-app.com/en/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://motoseyir-app.com/de/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://motoseyir-app.com/fr/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://motoseyir-app.com/it/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://motoseyir-app.com/es/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://motoseyir-app.com/nl/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://motoseyir-app.com/pl/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://motoseyir-app.com/cs/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://motoseyir-app.com/sk/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://motoseyir-app.com/hu/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://motoseyir-app.com/ro/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://motoseyir-app.com/hr/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://motoseyir-app.com/el/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motoseyir-app.com/en/nasil-yapilir.html"/>
+  </url>
+  <url>
+    <loc>https://motoseyir-app.com/nl/nasil-yapilir.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://motoseyir-app.com/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://motoseyir-app.com/en/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://motoseyir-app.com/de/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://motoseyir-app.com/fr/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://motoseyir-app.com/it/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://motoseyir-app.com/es/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://motoseyir-app.com/nl/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://motoseyir-app.com/pl/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://motoseyir-app.com/cs/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://motoseyir-app.com/sk/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://motoseyir-app.com/hu/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://motoseyir-app.com/ro/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://motoseyir-app.com/hr/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://motoseyir-app.com/el/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motoseyir-app.com/en/nasil-yapilir.html"/>
+  </url>
+  <url>
+    <loc>https://motoseyir-app.com/pl/nasil-yapilir.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://motoseyir-app.com/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://motoseyir-app.com/en/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://motoseyir-app.com/de/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://motoseyir-app.com/fr/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://motoseyir-app.com/it/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://motoseyir-app.com/es/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://motoseyir-app.com/nl/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://motoseyir-app.com/pl/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://motoseyir-app.com/cs/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://motoseyir-app.com/sk/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://motoseyir-app.com/hu/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://motoseyir-app.com/ro/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://motoseyir-app.com/hr/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://motoseyir-app.com/el/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motoseyir-app.com/en/nasil-yapilir.html"/>
+  </url>
+  <url>
+    <loc>https://motoseyir-app.com/cs/nasil-yapilir.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://motoseyir-app.com/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://motoseyir-app.com/en/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://motoseyir-app.com/de/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://motoseyir-app.com/fr/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://motoseyir-app.com/it/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://motoseyir-app.com/es/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://motoseyir-app.com/nl/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://motoseyir-app.com/pl/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://motoseyir-app.com/cs/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://motoseyir-app.com/sk/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://motoseyir-app.com/hu/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://motoseyir-app.com/ro/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://motoseyir-app.com/hr/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://motoseyir-app.com/el/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motoseyir-app.com/en/nasil-yapilir.html"/>
+  </url>
+  <url>
+    <loc>https://motoseyir-app.com/sk/nasil-yapilir.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://motoseyir-app.com/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://motoseyir-app.com/en/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://motoseyir-app.com/de/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://motoseyir-app.com/fr/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://motoseyir-app.com/it/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://motoseyir-app.com/es/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://motoseyir-app.com/nl/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://motoseyir-app.com/pl/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://motoseyir-app.com/cs/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://motoseyir-app.com/sk/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://motoseyir-app.com/hu/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://motoseyir-app.com/ro/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://motoseyir-app.com/hr/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://motoseyir-app.com/el/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motoseyir-app.com/en/nasil-yapilir.html"/>
+  </url>
+  <url>
+    <loc>https://motoseyir-app.com/hu/nasil-yapilir.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://motoseyir-app.com/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://motoseyir-app.com/en/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://motoseyir-app.com/de/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://motoseyir-app.com/fr/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://motoseyir-app.com/it/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://motoseyir-app.com/es/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://motoseyir-app.com/nl/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://motoseyir-app.com/pl/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://motoseyir-app.com/cs/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://motoseyir-app.com/sk/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://motoseyir-app.com/hu/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://motoseyir-app.com/ro/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://motoseyir-app.com/hr/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://motoseyir-app.com/el/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motoseyir-app.com/en/nasil-yapilir.html"/>
+  </url>
+  <url>
+    <loc>https://motoseyir-app.com/ro/nasil-yapilir.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://motoseyir-app.com/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://motoseyir-app.com/en/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://motoseyir-app.com/de/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://motoseyir-app.com/fr/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://motoseyir-app.com/it/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://motoseyir-app.com/es/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://motoseyir-app.com/nl/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://motoseyir-app.com/pl/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://motoseyir-app.com/cs/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://motoseyir-app.com/sk/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://motoseyir-app.com/hu/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://motoseyir-app.com/ro/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://motoseyir-app.com/hr/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://motoseyir-app.com/el/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motoseyir-app.com/en/nasil-yapilir.html"/>
+  </url>
+  <url>
+    <loc>https://motoseyir-app.com/hr/nasil-yapilir.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://motoseyir-app.com/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://motoseyir-app.com/en/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://motoseyir-app.com/de/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://motoseyir-app.com/fr/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://motoseyir-app.com/it/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://motoseyir-app.com/es/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://motoseyir-app.com/nl/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://motoseyir-app.com/pl/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://motoseyir-app.com/cs/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://motoseyir-app.com/sk/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://motoseyir-app.com/hu/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://motoseyir-app.com/ro/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://motoseyir-app.com/hr/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://motoseyir-app.com/el/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motoseyir-app.com/en/nasil-yapilir.html"/>
+  </url>
+  <url>
+    <loc>https://motoseyir-app.com/el/nasil-yapilir.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://motoseyir-app.com/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://motoseyir-app.com/en/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://motoseyir-app.com/de/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://motoseyir-app.com/fr/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://motoseyir-app.com/it/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://motoseyir-app.com/es/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://motoseyir-app.com/nl/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://motoseyir-app.com/pl/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://motoseyir-app.com/cs/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://motoseyir-app.com/sk/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://motoseyir-app.com/hu/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://motoseyir-app.com/ro/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://motoseyir-app.com/hr/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://motoseyir-app.com/el/nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motoseyir-app.com/en/nasil-yapilir.html"/>
+  </url>
+  <url>
+    <loc>https://motoseyir-app.com/gizlilik/</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://motoseyir-app.com/gizlilik/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://motoseyir-app.com/gizlilik/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motoseyir-app.com/gizlilik/en/"/>
+  </url>
+  <url>
+    <loc>https://motoseyir-app.com/gizlilik/en/</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://motoseyir-app.com/gizlilik/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://motoseyir-app.com/gizlilik/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://motoseyir-app.com/gizlilik/en/"/>
   </url>
 </urlset>

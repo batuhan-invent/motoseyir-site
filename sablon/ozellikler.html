@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{oz_baslik}}</title>
+<meta name="description" content="{{oz_aciklama}}">
+<link rel="canonical" href="{{kanonik}}">
+{{alternatifler}}
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Motoseyir">
+<meta property="og:locale" content="{{og_locale}}">
+<meta property="og:title" content="{{oz_og_baslik}}">
+<meta property="og:description" content="{{oz_og_aciklama}}">
+<meta property="og:url" content="{{kanonik}}">
+<meta property="og:image" content="https://motoseyir-app.com/img/og-kapak.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="apple-itunes-app" content="app-id={{uygulama_id}}">
+<meta name="theme-color" content="#0E6E73" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0E1315" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="{{kok}}img/favicon.png">
+<link rel="stylesheet" href="{{kok}}style.css">
+</head>
+<body>
+<a class="skip-link" href="#icerik">{{skip}}</a>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="logo" href="index.html">MOTO<em>SEYİR</em></a>
+    <nav aria-label="{{nav_etiket}}">
+      <ul class="nav">
+        <li><a href="index.html">{{nav_anasayfa}}</a></li>
+        <li><a href="nasil-yapilir.html">{{nav_nasil}}</a></li>
+        <li><a href="index.html#fiyat">{{nav_fiyat}}</a></li>
+        <li><a href="index.html#gizlilik">{{nav_gizlilik}}</a></li>
+        <li><a href="index.html#yenilikler">{{nav_yenilikler}}</a></li>
+        <li><a href="index.html#iletisim">{{nav_iletisim}}</a></li>
+      </ul>
+    </nav>
+    <div class="header-cta">
+      {{dil_secici}}
+      <a class="btn btn-ghost btn-sm" href="{{store}}">{{btn_indir}}</a>
+    </div>
+  </div>
+</header>
+
+<main id="icerik">
+  <section class="section" style="padding-bottom:1.5rem;">
+    <div class="wrap">
+      <span class="eyebrow">{{oz_eyebrow}}</span>
+      <h1 style="font-family:var(--serif); font-size:clamp(1.9rem,4.4vw,2.7rem); line-height:1.14; margin:0 0 1rem; max-width:22ch;">{{oz_h1}}</h1>
+      <p class="section-lead">{{oz_sayfa_lead}}</p>
+    </div>
+  </section>
+
+  <!-- KÜME 1 — Şehir içi ve kurye için -->
+  <section class="section section-2">
+    <div class="wrap">
+      <h2>{{kume1_h2}}</h2>
+
+      <div class="ozellik-satir">
+        <div class="ozellik-metin">
+          <span class="ozellik-etiket">{{oz1_etiket}}</span>
+          <h3>{{oz1_h3}}</h3>
+          <p>{{oz1_p}}</p>
+        </div>
+        <div class="ozellik-gorsel">
+          <img src="{{kok}}img/en-kisa-rota.jpg" width="414" height="900" alt="{{f1_alt}}" loading="lazy">
+        </div>
+      </div>
+
+      <div class="ozellik-satir ters">
+        <div class="ozellik-metin">
+          <span class="ozellik-etiket">{{oz2_etiket}}</span>
+          <h3>{{oz2_h3}}</h3>
+          <p>{{oz2_p}}</p>
+        </div>
+        <div class="ozellik-gorsel ikili">
+          <figure>
+            <img src="{{kok}}img/cok-duraklar-kendi-sira.jpg" width="413" height="900" alt="{{f3_alt_a}}" loading="lazy">
+            <figcaption>{{f3_altyazi_a}} — <span class="km-eski">{{km_eski}}</span></figcaption>
+          </figure>
+          <figure>
+            <img src="{{kok}}img/cok-duraklar-en-uygun.jpg" width="413" height="900" alt="{{f3_alt_b}}" loading="lazy">
+            <figcaption>{{f3_altyazi_b}} — <span class="km-yeni">{{km_yeni}}</span></figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="ozellik-satir tek" style="border-bottom:none; padding-bottom:0;">
+        <div class="ozellik-metin">
+          <span class="ozellik-etiket">{{oz3_etiket}}</span>
+          <h3>{{oz3_h3}}</h3>
+          <p>{{oz3_p}}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KÜME 2 — Gezginler ve hafta sonu turları için -->
+  <section class="section">
+    <div class="wrap">
+      <h2>{{kume2_h2}}</h2>
+
+      <div class="ozellik-satir">
+        <div class="ozellik-metin">
+          <span class="ozellik-etiket">{{oz4_etiket}}</span>
+          <h3>{{oz4_h3}}</h3>
+          <p>{{oz4_p}}</p>
+        </div>
+        <div class="ozellik-gorsel">
+          <img src="{{kok}}img/koy-yollari.jpg" width="414" height="900" alt="{{f2_alt}}" loading="lazy">
+        </div>
+      </div>
+
+      <div class="ozellik-satir ters">
+        <div class="ozellik-metin">
+          <span class="ozellik-etiket">{{oz5_etiket}}</span>
+          <h3>{{oz5_h3}}</h3>
+          <p>{{oz5_p}}</p>
+        </div>
+        <div class="ozellik-gorsel">
+          <img src="{{kok}}img/efsane-rotalar.jpg" width="413" height="900" alt="{{f4_alt}}" loading="lazy">
+        </div>
+      </div>
+
+      <div class="ozellik-satir">
+        <div class="ozellik-metin">
+          <span class="ozellik-etiket">{{oz6_etiket}}</span>
+          <h3>{{oz6_h3}}</h3>
+          <p>{{oz6_p}}</p>
+        </div>
+        <div class="ozellik-gorsel ikili">
+          <figure><img src="{{kok}}img/kesfet.jpg" width="414" height="900" alt="{{f9_alt}}" loading="lazy"></figure>
+          <figure><img src="{{kok}}img/yer-detay.jpg" width="414" height="900" alt="{{oz6_alt_b}}" loading="lazy"></figure>
+        </div>
+      </div>
+
+      <div class="ozellik-satir ters">
+        <div class="ozellik-metin">
+          <span class="ozellik-etiket">{{oz7_etiket}}</span>
+          <h3>{{oz7_h3}}</h3>
+          <p>{{oz7_p}}</p>
+        </div>
+        <div class="ozellik-gorsel">
+          <img src="{{kok}}img/tur-gunlugu.jpg" width="413" height="900" alt="{{f6_alt}}" loading="lazy">
+        </div>
+      </div>
+
+      <div class="ozellik-satir tek" style="border-bottom:none; padding-bottom:0;">
+        <div class="ozellik-metin">
+          <span class="ozellik-etiket">{{oz8_etiket}}</span>
+          <h3>{{oz8_h3}}</h3>
+          <p>{{oz8_p}}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KÜME 3 — Yolda ve sürüş sonrası -->
+  <section class="section section-2">
+    <div class="wrap">
+      <h2>{{kume3_h2}}</h2>
+
+      <div class="ozellik-satir">
+        <div class="ozellik-metin">
+          <span class="ozellik-etiket">{{oz9_etiket}}</span>
+          <h3>{{oz9_h3}}</h3>
+          <p>{{oz9_p}}</p>
+        </div>
+        <div class="ozellik-gorsel">
+          <img src="{{kok}}img/hava-durumu.jpg" width="414" height="900" alt="{{f7_alt}}" loading="lazy">
+        </div>
+      </div>
+
+      <div class="ozellik-satir ters">
+        <div class="ozellik-metin">
+          <span class="ozellik-etiket">{{oz10_etiket}}</span>
+          <h3>{{oz10_h3}}</h3>
+          <p>{{oz10_p}}</p>
+        </div>
+        <div class="ozellik-gorsel">
+          <img src="{{kok}}img/parkur-istatistik.jpg" width="414" height="900" alt="{{f8_alt}}" loading="lazy">
+        </div>
+      </div>
+
+      <div class="ozellik-satir tek">
+        <div class="ozellik-metin">
+          <span class="ozellik-etiket">{{oz11_etiket}}</span>
+          <h3>{{oz11_h3}}</h3>
+          <p>{{oz11_p}}</p>
+        </div>
+      </div>
+
+      <div class="ozellik-satir tek" style="border-bottom:none; padding-bottom:0;">
+        <div class="ozellik-metin">
+          <span class="ozellik-etiket">{{oz12_etiket}}</span>
+          <h3>{{oz12_h3}}</h3>
+          <p>{{oz12_p}}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KÜME 4 — Birlikte sürmek -->
+  <section class="section">
+    <div class="wrap">
+      <h2>{{kume4_h2}}</h2>
+
+      <div class="ozellik-satir">
+        <div class="ozellik-metin">
+          <span class="ozellik-etiket">{{oz13_etiket}}</span>
+          <h3>{{oz13_h3}}</h3>
+          <p>{{oz13_p}}</p>
+          <p>{{oz13_p2}}</p>
+        </div>
+        <div class="ozellik-gorsel">
+          <img src="{{kok}}img/grup-surusu.jpg" width="414" height="900" alt="{{f5_alt}}" loading="lazy">
+        </div>
+      </div>
+
+      <div class="ozellik-satir tek">
+        <div class="ozellik-metin">
+          <span class="ozellik-etiket">{{oz14_etiket}}</span>
+          <h3>{{oz14_h3}}</h3>
+          <p>{{oz14_p}}</p>
+        </div>
+      </div>
+
+      <div class="ozellik-satir tek">
+        <div class="ozellik-metin">
+          <span class="ozellik-etiket">{{oz15_etiket}}</span>
+          <h3>{{oz15_h3}}</h3>
+          <p>{{oz15_p}}</p>
+        </div>
+      </div>
+
+      <div class="ozellik-satir tek" style="border-bottom:none; padding-bottom:0;">
+        <div class="ozellik-metin">
+          <span class="ozellik-etiket">{{oz16_etiket}}</span>
+          <h3>{{oz16_h3}}</h3>
+          <p>{{oz16_p}}</p>
+        </div>
+      </div>
+
+      <!-- AI CoRider mağaza sürümünde YOK: tek satır, ayrıntı yok. -->
+      <p class="kucuk" style="margin-top:2rem;">{{corider_satiri}}</p>
+    </div>
+  </section>
+
+  <section class="section section-2">
+    <div class="wrap" style="text-align:left;">
+      <a class="btn btn-primary" href="{{store}}">{{btn_store}}</a>
+      <a class="btn btn-ghost" href="index.html">{{btn_anasayfa}}</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-ust">
+      <div>
+        <a class="logo" href="index.html" style="font-size:1.05rem;">MOTO<em>SEYİR</em></a>
+      </div>
+      <ul class="footer-links">
+        <li><a href="index.html">{{nav_anasayfa}}</a></li>
+        <li><a href="nasil-yapilir.html">{{nav_nasil}}</a></li>
+        <li><a href="{{gizlilik_url}}">{{nav_gizlilik}}{{gizlilik_tr_notu}}</a></li>
+        <li><a href="index.html#yenilikler">{{nav_yenilikler}}</a></li>
+        <li><a href="index.html#iletisim">{{nav_iletisim}}</a></li>
+        <li><a href="https://www.instagram.com/motoseyir.app/">Instagram</a></li>
+        <li><a href="{{store}}">App Store</a></li>
+      </ul>
+    </div>
+    <p>© {{yil}} Motoseyir. {{footer_haklar}}</p>
+    <div class="dil-altbilgi">
+      <span class="dil-altbilgi-baslik">{{footer_diller}}</span>
+      {{dil_altbilgi}}
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
