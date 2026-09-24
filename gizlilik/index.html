@@ -91,7 +91,7 @@
   <div class="wrap">
     <div class="eyebrow">Motoseyir · Motorcunun navigasyonu</div>
     <h1>Gizlilik Politikası ve Destek</h1>
-    <p class="updated">Son güncelleme: 20 Eylül 2026 · iOS ve Android için geçerlidir</p>
+    <p class="updated">Son güncelleme: 24 Eylül 2026 · iOS ve Android için geçerlidir</p>
 
     <section class="summary">
       <h2>Kısaca</h2>
@@ -113,9 +113,10 @@
       <h3>Konum bilgisi</h3>
       <p>
         Uygulama, başlangıç noktanızı belirlemek ve navigasyon sırasında sizi rotada takip etmek için
-        konumunuza erişir. Rota hesaplaması için konumunuz Google Maps Platform'a ve köy yolları modunda
-        kendi rota sunucumuza, yol üzerindeki yağış uyarısı için MET Norway hava servisine gönderilir.
-        Bu isteklerde konum saklanmaz — istek karşılanır ve biter.
+        konumunuza erişir. Rota hesaplaması için konumunuz Türkiye ve Yunanistan'da kendi rota sunucumuza
+        (OpenStreetMap verisi), diğer ülkelerde Stadia Maps'e (ABD), bunlar yanıt vermezse Google Maps
+        Platform'a; yol üzerindeki yağış uyarısı için MET Norway hava servisine gönderilir. Bu istekleri
+        biz saklamayız — istek karşılanır ve biter.
       </p>
       <p>
         <strong>Sürüş kaydı</strong> başlattığınızda iziniz, telefon cebinizdeyken ve ekran kapalıyken de
@@ -287,7 +288,7 @@
             <tr><th>Veri</th><th>Nereye gider</th><th>Amaç</th><th>Saklanıyor mu</th></tr>
           </thead>
           <tbody>
-            <tr><td>Konum</td><td>Google Maps Platform, rota sunucumuz</td><td>Rota hesaplama, navigasyon</td><td>Hayır</td></tr>
+            <tr><td>Konum</td><td>Rota sunucumuz (Türkiye, Yunanistan), Stadia Maps (diğer ülkeler), Google Maps Platform (yedek)</td><td>Rota hesaplama, navigasyon</td><td>Hayır</td></tr>
             <tr><td>Konum</td><td>MET Norway</td><td>Yol üzerinde yağış uyarısı</td><td>Hayır</td></tr>
             <tr><td>İz koordinatları (en çok 400 nokta)</td><td>Google Maps Platform (Elevation API)</td><td>Yükseklik profili</td><td>Bizde tutulmaz</td></tr>
             <tr><td>Anlık konum (grup sürüşü)</td><td>Takip servisimiz</td><td>Gruptakilerin birbirini görmesi</td><td>Navigasyon ya da sürüş kaydı boyunca; bitince silinir</td></tr>
@@ -312,7 +313,7 @@
       <h2>Sunucularımız</h2>
       <p>Altı hizmetimiz var; hepsi aynı makinede çalışır ve HTTPS kullanır:</p>
       <ul>
-        <li><strong>Rota sunucusu</strong> — köy yolları modunda rotayı hesaplar. Gönderilen: başlangıç ve varış koordinatları. Hesap yapılır, sonuç döner, kayıt tutulmaz.</li>
+        <li><strong>Rota sunucusu</strong> — Türkiye ve Yunanistan'daki rotaları OpenStreetMap verisiyle hesaplar. Gönderilen: başlangıç, varış ve ara nokta koordinatları. Hesap yapılır, sonuç döner, kayıt tutulmaz. Uygulama açılışta hangi rota motorunun kullanılacağını da sunucumuza sorar; bu istekte yalnız cihaz kimliği özeti gider ve kaydedilmez.</li>
         <li><strong>Sayaç servisi</strong> — deneme, kampanya ve davet haklarını yönetir. Gönderilen: cihaz kimliği özeti ve davet kodu.</li>
         <li><strong>Takip servisi</strong> — grup sürüşünü yürütür. Gönderilen: cihaz kimliği özeti, grup kodu, takma ad, avatar ve navigasyon ya da sürüş kaydı sırasında anlık konum. Konum yalnızca son değer olarak tutulur, geçmiş biriktirilmez, sürüş bitince silinir. Grupta başlattığınız rota da burada durur; sürüş bitince, en geç 12 saat sonra silinir.</li>
         <li><strong>Topluluk servisi</strong> — yalnız siz katılırsanız çalışır. Yukarıdaki &ldquo;Topluluk&rdquo; bölümünde tek tek yazılı olanlar burada tutulur ve <strong>herkese açıktır</strong>; &ldquo;yalnız arkadaşlarım görsün&rdquo; diye bir ayar yoktur. &ldquo;Yakınımda&rdquo; sıralaması için gönderilen konum yalnızca sıralamada kullanılır, kaydedilmez.</li>
@@ -325,7 +326,8 @@
     <section>
       <h2>Üçüncü taraf hizmetler</h2>
       <ul>
-        <li><strong>Google Maps Platform</strong> (Routes API, Places API, Maps SDK) — rota, yer arama ve harita. <a href="https://policies.google.com/privacy">policies.google.com/privacy</a></li>
+        <li><strong>Google Maps Platform</strong> (Places API, Maps SDK, Routes API) — yer arama, Android'de harita ve yalnız yedek olarak rota (kendi sunucumuz ve Stadia Maps yanıt vermezse). <a href="https://policies.google.com/privacy">policies.google.com/privacy</a></li>
+        <li><strong>Stadia Maps</strong> (ABD) — Türkiye ve Yunanistan dışında rota hesaplama; yalnız başlangıç, varış ve ara nokta koordinatları gönderilir. <a href="https://stadiamaps.com/privacy/privacy-policy/">stadiamaps.com/privacy</a></li>
         <li><strong>MET Norway (Yr.no)</strong> — hava durumu tahmini; yalnızca koordinat gönderilir. <a href="https://www.met.no/en/About-us/privacy">met.no gizlilik</a></li>
         <li><strong>Google Maps Platform (Elevation API)</strong> — yükseklik profili için bir izden seçilen en çok 400 noktanın koordinatları gönderilir: yüksekliği olmayan bir GPX dosyasını içe aktardığınızda, yüksekliği olmayan bir parkuru açtığınızda ve bir sürüş kaydınızı açtığınızda. Koordinat dışında bir şey gönderilmez. <a href="https://policies.google.com/privacy">policies.google.com/privacy</a></li>
         <li><strong>Bulut tabanlı yapay zekâ ses servisi (üçüncü taraf sağlayıcı)</strong> — AI CoRider ile sesli sohbet; yalnız siz açarsanız sesiniz ve yanıt bu servisten geçer, işlenmesi sağlayıcının kendi koşullarına tabidir. Sağlayıcının adı istek üzerine verilir.</li>
