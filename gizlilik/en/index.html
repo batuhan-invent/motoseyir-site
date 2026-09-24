@@ -130,7 +130,7 @@
       <p>The app accesses your location to determine your starting point and to follow you along the route during navigation.</p>
       <p>IF YOU START A RIDE RECORDING, location collection continues while the screen is off: the recording runs as a foreground service shown by a persistent notification, collecting a point roughly every 2 seconds and writing it TO YOUR DEVICE. This is so the middle of your ride is not lost when the phone goes into your pocket. When you stop the recording, collection stops too; the collected track is not sent to us. If you have turned on group riding, only your last location goes to the group riding service while recording (see Our servers).</p>
       <p>Otherwise (when only planning a route or with navigation open) location is used only while the app is in the foreground; the one exception is group riding: while navigation is running, your last location also goes to the group with the screen off.</p>
-      <p>Your location is processed on your device; for route calculation it is sent to our own routing server in Turkey and Greece (OpenStreetMap data), to Stadia Maps (USA) in other countries, and to Google Maps Platform if these do not respond; and to the MET Norway weather service for rain warnings along the route. We do not store these requests — the request is served and it ends.</p>
+      <p>Your location is processed on your device. For route calculation, the start, destination and via-point coordinates are sent to Motoseyir servers, to Stadia Maps (USA) depending on the region, and to Google Maps Platform if these do not respond; for rain warnings along the route, your location is sent to the MET Norway weather service. We do not store these requests — the request is served and it ends.</p>
       <p>You can revoke the permission at any time (iOS: Settings → Motoseyir → Location. Android: Settings → Apps → Motoseyir → Permissions). In that case you choose the starting point manually.</p>
     </section>
 
@@ -168,7 +168,7 @@
 
     <section>
       <h2>Our servers</h2>
-      <p>The routing server calculates routes in Turkey and Greece using OpenStreetMap data: the start, destination and via-point coordinates are sent, the route is calculated, the result is returned, and no record is kept. When it opens, the app also asks our server which routing engine to use; this request carries only the hashed device ID and is not stored.</p>
+      <p>The routing service calculates routes: the start, destination and via-point coordinates are sent, the route is calculated, the result is returned, and no record is kept. When it opens, the app also gets its settings from our server; this request carries only the hashed device ID and is not stored.</p>
       <p>The counter service manages trial and campaign entitlements: only the device identity hash is sent. No request log is kept; to prevent abuse there is only a one-hour counter, and what it holds is not your IP itself but an irreversible hash of it. The hash salt changes every time the service restarts, so no persistent identity is formed.</p>
       <p>The group riding service (only if you turn it on): your group memberships and, WHILE A RIDE IS RUNNING, your last location are held here. No history is kept — only the last point is stored and overwritten. When the ride ends the location is deleted; if the app cannot send the delete request, the server deletes it itself after three minutes. Location is only sent WHILE a ride recording or navigation is running — also with the screen off.</p>
       <p>People in the group see your route's name, how much of it you have completed, your current speed and heading, your last location and how many seconds ago it was updated. The nickname you enter when joining is held on the server — it is the only way other members can tell who is where. That name is YOUR choice, is visible only to people in the same group, and is deleted when the group is deleted.</p>
@@ -188,9 +188,9 @@
 
     <section>
       <h2>Third-party services</h2>
-      <p>Google Maps Platform (Places API, Maps SDK, Routes API) — place search in Turkey and Greece (everywhere on Android), the map on Android, and routing only as a fallback (if our own server and Stadia Maps do not respond).</p>
+      <p>Google Maps Platform (Places API, Maps SDK, Routes API) — place search in Turkey and Greece (everywhere on Android), the map on Android, and routing only as a fallback (if our servers and Stadia Maps do not respond).</p>
       <p>Apple Maps (MapKit) — the map on iPhone; place search outside Turkey and Greece and Discover on iPhone. The search text and approximate location go to Apple and are processed under Apple's privacy terms. <a href="https://www.apple.com/legal/privacy/">apple.com/legal/privacy</a></p>
-      <p>Stadia Maps (USA) — route calculation outside Turkey and Greece; only the start, destination and via-point coordinates are sent. <a href="https://stadiamaps.com/privacy/privacy-policy/">stadiamaps.com/privacy</a></p>
+      <p>Stadia Maps (USA) — route calculation depending on the region; only the start, destination and via-point coordinates are sent. <a href="https://stadiamaps.com/privacy/privacy-policy/">stadiamaps.com/privacy</a></p>
       <p>MET Norway (Yr.no) — weather forecast; only coordinates are sent.</p>
       <p>Google Maps Platform (Elevation API) — for the elevation profile, the coordinates of up to 400 points picked from a track are sent. In three cases: when you import a GPX file without elevation, when you open a trail without elevation, and when you open one of your ride recordings (that recording's track). Nothing but coordinates is sent.</p>
       <p>Apple/Google reverse geocoding — the stop coordinates are sent so that the stops of an imported track can be given names.</p>
